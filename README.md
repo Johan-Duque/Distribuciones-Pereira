@@ -1,54 +1,35 @@
-# React + TypeScript + Vite
+# Distribuciones Pereira
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de una página web para Distribuciones Pereira, una empresa dedicada a la distribución de productos. La página web está construida con React y Vite, y utiliza TypeScript para el tipado estático.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*   **React:** La interfaz de usuario está construida con React, una biblioteca de JavaScript para construir interfaces de usuario.
+*   **Vite:** El proyecto utiliza Vite como herramienta de construcción, lo que proporciona un desarrollo rápido y una construcción optimizada.
+*   **TypeScript:** El código está escrito en TypeScript, lo que ayuda a prevenir errores y mejora la legibilidad del código.
+*   **React Router:** La navegación de la página se gestiona con React Router, que permite una navegación fluida entre las diferentes secciones de la página.
+*   **ESLint:** El código se linteriza con ESLint, lo que ayuda a mantener un estilo de código consistente y a prevenir errores.
 
-## Expanding the ESLint configuration
+## Scripts
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*   `dev`: Inicia el servidor de desarrollo.
+*   `build`: Construye la aplicación para producción.
+*   `lint`: Linteriza el código.
+*   `preview`: Previsualiza la construcción de producción.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Dependencias
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+*   **react:** Biblioteca de JavaScript para construir interfaces de usuario.
+*   **react-dom:** Paquete para trabajar con el DOM en React.
+*   **react-router-dom:** Enrutamiento para aplicaciones de React.
+*   **zod:** Biblioteca de validación de esquemas.
+*   **@hookform/error-message:** Componente para mostrar mensajes de error en formularios.
+*   **react-icons:** Iconos para aplicaciones de React.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Dependencias de Desarrollo
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+*   **@vitejs/plugin-react:** Plugin de Vite para React.
+*   **eslint:** Herramienta de linter para JavaScript y TypeScript.
+*   **typescript:** Superset de JavaScript que añade tipado estático.
+*   **vite:** Herramienta de construcción para aplicaciones web modernas.
+

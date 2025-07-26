@@ -1,68 +1,36 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    /* --- Colors --- */
+    --black-color:  #000000;
+    --dark-color: #7f5700;
+    --main-color:  #ffae00 ;
+    --light-color:  #ffc953 ;
+    --white-color:  #ffffff;
+    --gray-color: rgba(0, 0, 0, 0.879);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    /* --- Fonts --- */
+    --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --second-font: 'Times New Roman', Times, serif;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    /* --- Fonts Sizes --- */
+    --logos-size: 30px;
+    --titles-size: 22px;
+    --subTitles-size: 20px;
+    --texts-size: 16px;
+    --links-size: 16px;
+    --buttons-size: 14px;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+    /* --- Animations Duration --- */
+    --long-time: 1.5s;
+    --average-time: 1s;
+    --short-time: .3s;
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    /* --- Margins --- */
+    --margin-top: 40px;
+    --margin-bottom: 40px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }

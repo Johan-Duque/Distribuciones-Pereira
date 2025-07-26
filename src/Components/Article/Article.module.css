@@ -1,0 +1,26 @@
+.article_container {
+  gap: 15px;
+  width: 350px;
+  height: 100%;
+  display: flex;
+  padding: 22px;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 2px solid #000;
+}
+
+.article_img {
+    width: 100%;
+}
+
+.article_title {
+    font-size: var(--titles-size);
+    text-align: center;
+}
+
+.article_text {
+    text-align: center;
+    margin: 0px 20px;
+    font-size: 16px;
+}
