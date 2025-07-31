@@ -1,6 +1,5 @@
-import { Header, Card, Grid, Carousel } from "../../Components";
+import { Header, Card, Carousel } from "../../Components";
 import { useFetch } from "../../Hooks/useFetch";
-import styles from "./Products.module.css";
 
 interface Product {
   img: string;
@@ -12,7 +11,7 @@ interface Product {
 
 function Products() {
   const { data, loading, error } = useFetch<{ products: Product[] }>(
-    "/data.json"
+    "data.json"
   );
 
   if (loading) {
@@ -35,7 +34,7 @@ function Products() {
       {/*
       
       <Grid maxWidth={true} marginBottom={true}>
-        {data?.products.map((product, index) => (
+        {data?.products.map((product: Product, index: number) => (
           <Card
             key={index}
             img={product.img}
@@ -50,7 +49,7 @@ function Products() {
       */}
 
       <Carousel>
-        {data?.products.map((product, index) => (
+        {data?.products.map((product: Product, index: number) => (
           <Card
             key={index}
             img={product.img}
@@ -61,7 +60,7 @@ function Products() {
           />
         ))}
 
-        {data?.products.map((product, index) => (
+        {data?.products.map((product: Product, index: number) => (
           <Card
             key={index}
             img={product.img}

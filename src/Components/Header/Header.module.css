@@ -18,11 +18,13 @@
 }
 
 .Header .Header__div_content p {
-  font-size: var(--texts-size);
+  font-size: clamp(1rem, 2vw, 1.2rem);
   text-align: center;
   max-width: 600px;
   min-width: 300px;
   word-wrap: break-word;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 /* Responsive Design */ 
@@ -40,7 +42,7 @@
   }
 
   .Header__div_content p {
-    width: 90%;
+    
   }
 
 }

@@ -1,4 +1,3 @@
-import { Title } from '../index'
 import styles from './DistributionNetwork.module.css';
 
 interface props {
