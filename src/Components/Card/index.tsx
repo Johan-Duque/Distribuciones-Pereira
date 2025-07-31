@@ -1,5 +1,4 @@
-import styles from "./Card.module.css"; 
-import image from '../../Images/La_Concordia.jpg'
+import styles from "./Card.module.css";
 import { GiShop } from "react-icons/gi";
 
 interface props {

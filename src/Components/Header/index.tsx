@@ -12,7 +12,7 @@ function Header({title, text, height} : props) {
     <>
       <section className={styles.Header} style={{height: `${height}vh`}}>
         <div className={styles.Header__div_content}>
-          <Title text={title} type={1} color="white" align="left" />
+          <Title text={title} type={1} color="white" align="center" />
           <p>
             {text}
           </p>
