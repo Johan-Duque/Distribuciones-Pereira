@@ -3,5 +3,6 @@ export enum EnumColors {
   dark = 'var(--dark-color)',
   main = 'var(--main-color)',
   light = 'var(--light-color)',
+  gray = 'var(--gray-color)',
   white = 'var(--white-color)',
 }

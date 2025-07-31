@@ -1,51 +1,23 @@
-.section_1 {
-  width: 100%;
-  height: 100vh;
-  background-image: url("../../Images/Home.jpg");
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/* --- Section 1 --- */
 
-.section_1 .section_1__div_content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--white-color);
-  gap: 30px;
-}
-
-.section_1 .section_1__div_content p {
-  font-size: var(--texts-size);
-  text-align: center;
-  max-width: 600px;
-  min-width: 300px;
-  word-wrap: break-word;
-}
-
-/* --- Section 2 --- */
-
-.section_2 {
+.Section_1 {
   width: 100%;
   padding: 80px;
 }
 
-/* --- Section 3 --- */
+/* --- Section 2 --- */
 
-.section_3 {
+.Section_2 {
   width: 100%;
   padding-top: 20px;
-  margin-bottom: var(--margin-bottom);
+  margin-bottom: calc(2 * var(--margin-bottom));
 }
 
-.section_3 h2 {
+.Section_2 h2 {
   margin: 0px 0px var(--margin-top) 0px;
 }
 
-.section_3 .divImg {
+.Section_2 .divImg {
   position: relative;
   width: 100%;
   height: 320px !important;
@@ -56,7 +28,7 @@
   gap: 10px;
 }
 
-.section_3 .divImg h3 {
+.Section_2 .divImg h3 {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -65,10 +37,10 @@
   padding: 5px 0;
   font-weight: 1;
   border-top: 2px solid #000;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
-.section_3 .divImg img {
+.Section_2 .divImg img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -78,43 +50,39 @@
 /* Responsive Design */
 
 @media (max-width: 900px) {
-  .section_2 {
+  .Section_1 {
     padding: 40px;
   }
 
-  .section_3 div {
+  .Section_2 div {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .section_1__div_content p {
-    max-width: 400px;
+  .Section_1,
+  .Section_2 {
+    padding: 60px 40px;
   }
 
-  .section_2,
-  .section_3 {
-    padding: 60px 40px;
+  .Section_2 {
+    margin-bottom: 0px;
   }
 }
 
 @media (max-width: 480px) {
-  .section_1__div_content p {
-    max-width: 300px;
-  }
-
-  .section_2, .section_3 {
+  .Section_1,
+  .Section_2 {
     padding: var(--margin-top) 20px;
   }
 
-  .section_3 .divImg {
+  .Section_2 .divImg {
     height: 250px !important;
-}
-
+  }
 }
 
 @media (max-width: 450px) {
-  .section_2 {
+  .Section_1 {
     padding: 40px 20px;
   }
 }

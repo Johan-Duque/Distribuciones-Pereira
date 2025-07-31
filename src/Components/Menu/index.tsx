@@ -40,10 +40,9 @@ function Menu() {
 
   return (
     <header>
-      <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ""}`}>
-        <div className={styles.div_logo}>
+      <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ""}`} style={responsiveMenu ? {backgroundColor: "transparent"} : undefined}>
+        <div className={styles.div_logo} style={responsiveMenu ? {display: 'none', transition: 'none'} : undefined}>
           <h1>
-            {" "}
             Distribuciones Pereira <TiDropbox color="var(--main-color)"/>{" "}
           </h1>
         </div>
@@ -53,6 +52,7 @@ function Menu() {
             <TbMenuDeep
               className={styles.menu_hamburger}
               onClick={handleMenu}
+              style={responsiveMenu ? {display: 'none'} : undefined}
             />
           )}
           <ul

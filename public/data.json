@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "img": "https://http2.mlstatic.com/D_NQ_NP_798917-MLV71565367261_092023-O.webp",
+      "alt_img": "vasos",
+      "title": "Vasos",
+      "text": "Our Equilibrium collection promotes balance and calm.",
+      "company": "Los Llanos"
+    },
+    {
+      "img": "https://dinorank.com/img/dinobrain/239193/imagenf0329d6ee6960fb36a68b104c91fd1d0.jpg",
+      "alt_img": "Bolsas",
+      "title": "Bolsas",
+      "text": "Our Equilibrium collection promotes balance and calm.",
+      "company": "Los Llanos"
+    },
+    {
+      "img": "https://estaticos.dulcear.com/image/cache/catalog/Foilca/envase%20420%20-2-550x550w.jpg.webp",
+      "alt_img": "Bandejas",
+      "title": "Bandejas",
+      "text": "Our Equilibrium collection promotes balance and calm.",
+      "company": "Los Llanos"
+    },
+    {
+      "img": "https://deliveryplastic.com/wp-content/uploads/2021/06/ENVASE-PLASTICO-TINA-DE-8-OZ-.jpg",
+      "alt_img": "Onzas",
+      "title": "Onzas",
+      "text": "Our Equilibrium collection promotes balance and calm.",
+      "company": "Los Llanos"
+    }
+  ]
+}
