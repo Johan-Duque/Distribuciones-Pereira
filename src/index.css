@@ -5,7 +5,7 @@
     --main-color:  #ffae00 ;
     --light-color:  #ffc953 ;
     --white-color:  #ffffff;
-    --gray-color: rgba(0, 0, 0, 0.879);
+    --gray-color: #141923; /* rgba(0, 0, 0, 0.879) */
 
     /* --- Fonts --- */
     --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;

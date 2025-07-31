@@ -1,83 +1,84 @@
-import { Title, Grid, Article } from "../../Components";
+import { Title, Grid, Article, Header } from "../../Components";
 import { EnumColors } from "../../Types";
 import styles from "./Home.module.css";
+
+import Tachira from "../../Images/Tachira.webp";
+import San_Cristobal from "../../Images/San_Cristobal.webp";
+import La_Concordia from "../../Images/La_Concordia.jpg";
 
 function Home() {
   return (
     <>
-      <section className={styles.section_1}>
-        <div className={styles.section_1__div_content}>
-          <Title
-            text="Distribuciones Pereira 2025"
-            type={1}
-            color="white"
-            align="left"
-          />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi error
-            perspiciatis voluptates laudantium, tempore quibusdam quod numquam
-          </p>
-        </div>
-      </section>
+      <Header
+        title="Distribuciones Pereira 2025"
+        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi error
+            perspiciatis voluptates laudantium, tempore quibusdam quod numquam"
+        height={100}
+      />
 
-      <section className={styles.section_2}>
+      <section className={styles.Section_1}>
         <Title text="¿Que ofrecemos?" type={2} color="black" align="center" />
-        <Grid width={100}>
+        <Grid maxWidth>
           <Article title="Ventas al mayor" backgroundColor={EnumColors.light}>
-            Nos especializamos en ofrecer soluciones de suministro a gran escala
-            para negocios y distribuidores. Entendemos las dinámicas del mercado
-            mayorista.
+            Ofrecemos soluciones de suministro a gran escala para negocios y
+            distribuidores. Nos enfocamos en una entrega eficiente para
+            optimizar tus operaciones mayoristas.
           </Article>
 
           <Article title="Ventas al detal" backgroundColor={EnumColors.light}>
-            Para el consumidor final, ofrecemos una experiencia de compra cómoda
-            y accesible. Ofrecemos este modelo de negocios para que puedas
-            adquirirlos individualmente
+            Para el consumidor final, brindamos una experiencia de compra
+            cómoda. Puedes adquirir nuestros productos individualmente, con
+            facilidad y flexibilidad.
           </Article>
 
           <Article
             title="Envios a multiples Regiones"
             backgroundColor={EnumColors.light}
           >
-            Contamos con la infraestructura y los socios logísticos necesarios
-            para llevar nuestros productos a diversas Ciudades y Estados de
-            Venezuela
+            Disponemos de infraestructura y socios logísticos para llevar
+            nuestros productos a toda Venezuela. Tu pedido llegará seguro y
+            puntual, sin importar la ubicación.
           </Article>
         </Grid>
       </section>
 
-      <section className={styles.section_3}>
+      <section className={styles.Section_2}>
         <Title
           text="¿Donde nos ubicamos?"
           type={2}
           color="black"
           align="center"
         />
-        <Grid width={90}>
+        <Grid maxWidth marginBottom>
           <div className={styles.divImg}>
-             <Title text="Estado / Tachira" type={3} color="white" align="center" />
-            <img
-              src="https://centaurimagazine.com/wp-content/uploads/2025/02/IMG_7122.jpg"
-              alt=""
+            <Title
+              text="Estado / Tachira"
+              type={3}
+              color="white"
+              align="center"
             />
+            <img src={Tachira} alt="" />
           </div>
           <div className={styles.divImg}>
-            <Title text="Ciudad / San Cristobal" type={3} color="white" align="center" />
-            <img
-              src="https://noticias.com.ve/wp-content/uploads/2019/03/15136737286_6793bf227b_b.jpg"
-              alt=""
+            <Title
+              text="Ciudad / San Cristobal"
+              type={3}
+              color="white"
+              align="center"
             />
+            <img src={San_Cristobal} alt="" />
           </div>
           <div className={styles.divImg}>
-            <Title text="Municipio / La Concordia" type={3} color="white" align="center" />
-            <img
-              src="https://scontent.fccs8-1.fna.fbcdn.net/v/t39.30808-6/487184257_1094398552726686_4719621417511987536_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=E8dq8PM1RPkQ7kNvwF35ces&_nc_oc=Admjxcjsk9_ljxZMi1oGDnlPtR6GT6Wa7GASKqDPXoMdlHc_L0n0Bv7OxIxjJOu09Lk&_nc_zt=23&_nc_ht=scontent.fccs8-1.fna&_nc_gid=8MGN9XfsIyU4yLVWJ8E55w&oh=00_AfSkJVI1S_dvgvLE1zvLcZeJvxKkSCfHJKHQuXBXczHaDg&oe=687F473F"
-              alt=""
+            <Title
+              text="Municipio / La Concordia"
+              type={3}
+              color="white"
+              align="center"
             />
+            <img src={La_Concordia} alt="" />
           </div>
         </Grid>
       </section>
-
     </>
   );
 }

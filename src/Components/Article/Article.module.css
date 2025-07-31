@@ -1,13 +1,14 @@
 .article_container {
   gap: 15px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 100%;
   display: flex;
   padding: 22px;
   align-items: center;
   flex-direction: column;
   border-radius: 15px;
-  border: 2px solid #000;
+  border: 2px solid var(--gray-color);
 }
 
 .article_img {
@@ -17,10 +18,12 @@
 .article_title {
     font-size: var(--titles-size);
     text-align: center;
+    color: var(--gray-color)
 }
 
 .article_text {
     text-align: center;
     margin: 0px 20px;
     font-size: 16px;
+    color: var(--gray-color)
 }

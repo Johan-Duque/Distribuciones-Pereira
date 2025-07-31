@@ -45,7 +45,7 @@
 }
 
 .scrolled .div_links .menu_hamburger {
-  color: var(--white-color);
+  color: var(--main-color);
 }
 
 .ul_links {
@@ -77,8 +77,6 @@
   overflow: hidden;
 }
 
-
-
 .li_links a::after {
   content: "";
   position: absolute;
@@ -89,6 +87,7 @@
   background-color: var(--main-color);
   transform: translateX(-100%);
   transition: transform var(--short-time) ease-in-out;
+  border-left: 2px solid var(--main-color);
 }
 
 .scrolled .li_links a::after {
@@ -128,7 +127,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--main-color);
+    background-color: var(--gray-color);
     transition: right var(--short-time) ease-in-out;
   }
 
@@ -150,7 +149,7 @@
     top: 5%;
     left: 10%;
     font-size: var(--logos-size);
-    color: var(--white-color);
+    color: var(--main-color);
   }
 }
 

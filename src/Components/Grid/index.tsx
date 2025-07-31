@@ -3,11 +3,13 @@ import styles from "./Grid.module.css";
 
 interface props {
   children: ReactNode;
-  width: number;
+  maxWidth?: boolean;
+  marginBottom?: boolean;
 }
 
-function Grid({ children, width }: props) {
-  return <div className={styles.grid_container} style={{width: `${width}%`}}>{children}</div>;
+function Grid({ children, maxWidth, marginBottom }: props) {
+  const gridClassName = `${styles.grid_container} ${maxWidth ? styles.max_width_90 : ''}`;
+  return <div className={gridClassName} style={marginBottom ? {marginBottom: `var(--margin-bottom)`} : {} }>{children}</div>;
 }
 
 export { Grid };

@@ -6,9 +6,10 @@ interface Props {
   type: 1 | 2 | 3 | 4 | 5 | 6;
   color?: keyof typeof EnumColors; 
   align?: "left" | "center" | "right";
+  className?: string;
 }
 
-function Title({ text, color, type, align }: Props) {
+function Title({ text, color, type, align, className }: Props) {
 
   const fontSizeMap: { [key: number]: number } = {
     1: 60,
@@ -29,7 +30,7 @@ function Title({ text, color, type, align }: Props) {
 
   const HeadingTag = `h${type}`;
 
-  return React.createElement(HeadingTag, { style: baseStyles }, text);
+  return React.createElement(HeadingTag, { style: baseStyles }, text, className);
 }
 
 export { Title };

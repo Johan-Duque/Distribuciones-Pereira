@@ -1,8 +1,15 @@
-import { Title } from "../../Components"
+import { Header } from '../../Components'
 
 function Form () {
     return (
-        <Title text="Form"/>
+        <>
+            <Header 
+                title='Contactanos'
+                text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi error
+                perspiciatis voluptates laudantium, tempore quibusdam quod numquam'
+                height={60}
+            />
+        </>
     )
 }
 

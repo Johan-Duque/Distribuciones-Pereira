@@ -1,9 +1,80 @@
-import { Title } from "../../Components"
+import { Header, Card, Grid, Carousel } from "../../Components";
+import { useFetch } from "../../Hooks/useFetch";
+import styles from "./Products.module.css";
 
-function Products () {
-    return (
-        <Title text="Products"/>
-    )
+interface Product {
+  img: string;
+  alt_img: string;
+  title: string;
+  text: string;
+  company: string;
 }
 
-export { Products }
+function Products() {
+  const { data, loading, error } = useFetch<{ products: Product[] }>(
+    "/data.json"
+  );
+
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+
+  if (error) {
+    return <h2>Error: {error.message}</h2>;
+  }
+
+  return (
+    <>
+      <Header
+        title="Productos"
+        text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi error
+            perspiciatis voluptates laudantium, tempore quibusdam quod numquam"
+        height={60}
+      />
+      
+      {/*
+      
+      <Grid maxWidth={true} marginBottom={true}>
+        {data?.products.map((product, index) => (
+          <Card
+            key={index}
+            img={product.img}
+            alt_img={product.alt_img}
+            title={product.title}
+            text={product.text}
+            company={product.company}
+          />
+        ))}
+      </Grid>
+      
+      */}
+
+      <Carousel>
+        {data?.products.map((product, index) => (
+          <Card
+            key={index}
+            img={product.img}
+            alt_img={product.alt_img}
+            title={product.title}
+            text={product.text}
+            company={product.company}
+          />
+        ))}
+
+        {data?.products.map((product, index) => (
+          <Card
+            key={index}
+            img={product.img}
+            alt_img={product.alt_img}
+            title={product.title}
+            text={product.text}
+            company={product.company}
+          />
+        ))}
+        
+      </Carousel>
+    </>
+  );
+}
+
+export { Products };
