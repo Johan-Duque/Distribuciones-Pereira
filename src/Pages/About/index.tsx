@@ -1,5 +1,4 @@
 import { DistributionNetwork, Header } from "../../Components";
-import img_venezuela from "../../Images/Venezuela_2.png";
 
 function About() {
   return (
@@ -11,7 +10,7 @@ function About() {
         height={60}
       />
       <DistributionNetwork
-        img={img_venezuela}
+        img='https://i.ibb.co/nN550T61/Venezuela.jpg'
         title="15 años en la industria"
         text_1="Your geseargphen nerwan oñes yervice eftrtchaicerte ense, Lond gepviatry forridinamianuine yortion detimacy, and nupidos youies"
         text_2="Your geseargphen nerwan oñes yervice eftrtchaicerte ense, Lond gepviatry forridinamianuine yortion detimacy, and nupidos youies io-poatiare inthorne nõestiadinetaties magis treatueetule is clgjataignet and retrminat. io-poatiare inthorne nõestiadinetaties magis treatueetule is clgjataignet and retrminat. Lond gepviatry forridinamianuine yortion detimacy, and nupidos youies io-poatiare inthorne nõestiadinetaties magis"

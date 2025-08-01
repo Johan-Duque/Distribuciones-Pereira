@@ -1,11 +1,15 @@
 .Header {
   width: 100%;
-  background-image: url("../../Images/Home.jpg");
+  background-image: url("https://i.ibb.co/1GzNWnHB/Header.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center;                                                                       
+}
+
+section h2 {
+  margin-bottom: 25px;
 }
 
 .Header .Header__div_content {
