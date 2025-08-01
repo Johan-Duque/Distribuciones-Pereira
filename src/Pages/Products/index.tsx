@@ -30,23 +30,6 @@ function Products() {
             perspiciatis voluptates laudantium, tempore quibusdam quod numquam"
         height={60}
       />
-      
-      {/*
-      
-      <Grid maxWidth={true} marginBottom={true}>
-        {data?.products.map((product: Product, index: number) => (
-          <Card
-            key={index}
-            img={product.img}
-            alt_img={product.alt_img}
-            title={product.title}
-            text={product.text}
-            company={product.company}
-          />
-        ))}
-      </Grid>
-      
-      */}
 
       <Carousel>
         {data?.products.map((product: Product, index: number) => (
