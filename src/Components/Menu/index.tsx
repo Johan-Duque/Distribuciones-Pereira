@@ -66,22 +66,22 @@ function Menu() {
 
             <div className={styles.div_li}>
               <li className={styles.li_links}>
-                <Link to="/home" onClick={handleMenu}>
+                <Link to="/inicio" onClick={handleMenu}>
                   Inicio
                 </Link>
               </li>
               <li className={styles.li_links}>
-                <Link to="/about" onClick={handleMenu}>
+                <Link to="/sobre_nosotros" onClick={handleMenu}>
                   Sobre Nosotros
                 </Link>
               </li>
               <li className={styles.li_links}>
-                <Link to="/products" onClick={handleMenu}>
+                <Link to="/productos" onClick={handleMenu}>
                   Productos
                 </Link>
               </li>
               <li className={styles.li_links}>
-                <Link to="/form" onClick={handleMenu}>
+                <Link to="/contacto" onClick={handleMenu}>
                   Contacto
                 </Link>
               </li>

@@ -1,6 +1,6 @@
-import { Header } from '../../Components'
+import { Header, Form } from '../../Components'
 
-function Form () {
+function Contact () {
     return (
         <>
             <Header 
@@ -9,8 +9,11 @@ function Form () {
                 perspiciatis voluptates laudantium, tempore quibusdam quod numquam'
                 height={60}
             />
+
+            <Form />
+
         </>
     )
 }
 
-export { Form }
+export { Contact }

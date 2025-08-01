@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Home, About, Products, Form } from "./Pages";
+import { Home, About, Products, Contact } from "./Pages";
 import { ScrollToTop } from "./Components";
 import App from "./App";
 
@@ -9,11 +9,11 @@ function AppRouter() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />}>
-          <Route index element={<Navigate to="/home" replace />} />
-          <Route path="home" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="products" element={<Products />} />
-          <Route path="form" element={<Form />} />
+          <Route index element={<Navigate to="/inicio" replace />} />
+          <Route path="inicio" element={<Home />} />
+          <Route path="sobre_nosotros" element={<About />} />
+          <Route path="productos" element={<Products />} />
+          <Route path="contacto" element={<Contact />} />
         </Route>
       </Routes>
     </HashRouter>
