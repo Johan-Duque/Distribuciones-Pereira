@@ -7,8 +7,7 @@ function Home() {
     <>
       <Header
         title={`Distribuciones Pereira 2025`}
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi error
-            perspiciatis voluptates laudantium, tempore quibusdam quod numquam"
+        text="Empresa especializada en la distribución de productos plásticos, de repostería y de limpieza en los estados Táchira, Mérida y Barinas"
         height={100}
       />
 
@@ -77,18 +76,6 @@ function Home() {
 
       </section>
 
-      <section className={styles.Section_3}>
-        <Title
-          text="Ubicacion exacta"
-          type={2}
-          color="black"
-          align="center"
-        />
-        <Grid maxWidth marginBottom>
-          <iframe className={styles.iframe} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7906.648200715754!2d-72.23650750942225!3d7.755408969054159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e666cae72d72479%3A0x53a9410365c243b1!2sHospital%20Central%20de%20San%20Crist%C3%B3bal.!5e0!3m2!1ses!2sve!4v1754008954106!5m2!1ses!2sve" width="90%" height="350"></iframe>
-        </Grid>
-
-      </section>
     </>
   );
 }

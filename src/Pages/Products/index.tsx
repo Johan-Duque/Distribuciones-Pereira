@@ -26,8 +26,7 @@ function Products() {
     <>
       <Header
         title="Productos"
-        text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi error
-            perspiciatis voluptates laudantium, tempore quibusdam quod numquam"
+        text="Explora nuestro catálogo. Conoce la variedad de productos que tenemos para tu negocio, desde plásticos y repostería hasta artículos de limpieza."
         height={60}
       />
 

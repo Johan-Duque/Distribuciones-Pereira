@@ -22,7 +22,7 @@ function Card ({img, alt_img, title, text, company} : props) {
         />
       </div>
 
-      <h2 className={styles.title}>{title}</h2>{" "}
+      <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>
         {text}
       </p>

@@ -28,3 +28,17 @@
     font-size: 12px;
     margin-top: 5px;
 }
+
+.textarea::placeholder {
+    color: #999;
+    opacity: 1; /* Firefox */
+}
+
+.textarea:-ms-input-placeholder {
+    color: #999;
+}
+
+.textarea::-ms-input-placeholder {
+    color: #999;
+}
+
