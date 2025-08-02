@@ -13,59 +13,54 @@ function Contact() {
       />
 
       <div className={styles.contact_page_container}>
-        <Form>
-          {({ control, errors }) => (
-            <>
-              <div className={form_styles.row}>
-                <Input
-                  name="name"
-                  control={control}
-                  label="Nombre"
-                  type="text"
-                  error={errors.name}
-                  placeholder="Nombre"
-                />
-                <Input
-                  name="last_name"
-                  control={control}
-                  label="Apellido"
-                  type="text"
-                  error={errors.last_name}
-                  placeholder="Apellido"
-                />
-              </div>
-              <div className={form_styles.row}>
-                <Input
-                  name="email"
-                  control={control}
-                  label="Correo Electronico"
-                  type="email"
-                  error={errors.email}
-                  placeholder="ejemplo@gmail.com"
-                />
-                <Input
-                  name="phone"
-                  control={control}
-                  label="Numero Telefonico"
-                  type="text"
-                  error={errors.phone}
-                  placeholder="(0XXX) XXX-XXXX"
-                />
-              </div>
-              <TextArea
-                name="message"
-                control={control}
-                label="Mensaje"
-                type="text"
-                error={errors.message}
-              />
-            </>
-          )}
+        <Form title="Formulario de Contacto" button_text="Enviar">
+          <div className={form_styles.row}>
+            <Input
+              name="name"
+              label="Nombre"
+              type="text"
+              placeholder="Nombre"
+            />
+            <Input
+              name="last_name"
+              label="Apellido"
+              type="text"
+              placeholder="Apellido"
+            />
+          </div>
+          <div className={form_styles.row}>
+            <Input
+              name="email"
+              label="Correo Electronico"
+              type="email"
+              placeholder="ejemplo@gmail.com"
+            />
+            <Input
+              name="phone"
+              label="Numero Telefonico"
+              type="text"
+              placeholder="(0XXX) XXX-XXXX"
+            />
+          </div>
+          <TextArea
+            name="message"
+            label="Mensaje"
+            type="text"
+          />
         </Form>
-        <ContactInfo />
+
+        <ContactInfo 
+          title="Información de Contacto"
+          subTitle_1="Ubicacion"
+          description_1="Estado Tachira | San Cristobal "
+          subTitle_2="Dirreccion"
+          description_2="Calle 2 con carrera 9 N° 9- 66 | La Concordia"
+          iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1175.3457485145284!2d-72.23460011862618!3d7.7498726305980465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e661355278f0801%3A0xe0a0649230ad3f90!2sCalle%202%20%26%20Carrera%209%2C%20San%20Crist%C3%B3bal%205001%2C%20T%C3%A1chira!5e0!3m2!1ses!2sve!4v1754168441622!5m2!1ses!2sve"
+        />
+
       </div>
     </>
   );
 }
 
-export { Contact };
+export default Contact;

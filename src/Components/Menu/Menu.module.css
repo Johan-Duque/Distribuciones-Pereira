@@ -18,18 +18,19 @@
   height: 100%;
 }
 
-.div_logo h1 {
+.div_logo span {
   color: var(--white-color);
   display: flex;
   align-items: center;
   gap: 5px;
+  font-size: 24px;
 }
 
-.div_logo h1 svg {
+.div_logo span svg {
   color: var(--main-color);
 }
 
-.scrolled .div_logo h1 svg {
+.scrolled .div_logo span svg {
   color: var(--white-color);
 }
 
@@ -72,7 +73,6 @@
   text-decoration: none;
   color: var(--white-color);
   font-size: calc(var(--links-size) + 4px);
-  font-weight: 999;
   position: relative;
   overflow: hidden;
 }

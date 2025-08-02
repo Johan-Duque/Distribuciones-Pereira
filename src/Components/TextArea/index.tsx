@@ -1,16 +1,18 @@
-import { Controller, type Control, type FieldError } from 'react-hook-form'
+import { Controller } from 'react-hook-form'
 import { type type_form } from '../../Types'
 import styles from './TextArea.module.css'
+import { useHookForm } from '../../Hooks/useHookForm'
 
 interface Props {
     name: keyof type_form, 
-    control: Control<type_form>,
     label: string, 
-    type?: string, 
-    error?: FieldError
+    type?: string
 }
 
-function TextArea({ name, control, label, error }: Props) {
+function TextArea({ name, label }: Props) {
+  const { control, errors } = useHookForm()
+  const error = errors[name]
+
   return (
     <div className={styles.textarea_container}>
       <label htmlFor={name} className={styles.label}>

@@ -1,4 +1,4 @@
-import { Title, Grid, Article, Header } from "../../Components";
+import { Title, Grid, Article, Header, Loading } from "../../Components";
 import { EnumColors } from "../../Types";
 import styles from "./Home.module.css";
 

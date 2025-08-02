@@ -42,9 +42,9 @@ function Menu() {
     <header>
       <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ""}`} style={responsiveMenu ? {backgroundColor: "transparent"} : undefined}>
         <div className={styles.div_logo} style={responsiveMenu ? {display: 'none', transition: 'none'} : undefined}>
-          <h1>
-            Distribuciones Pereira <TiDropbox color="var(--main-color)"/>{" "}
-          </h1>
+          <span>
+            Distribuciones Pereira <TiDropbox color="var(--main-color)"/>
+          </span>
         </div>
 
         <div className={styles.div_links}>
