@@ -26,3 +26,17 @@
     font-size: 12px;
     margin-top: 5px;
 }
+
+.input::placeholder {
+    color: #999;
+    opacity: 1; /* Firefox */
+}
+
+.input:-ms-input-placeholder {
+    color: #999;
+}
+
+.input::-ms-input-placeholder {
+    color: #999;
+}
+

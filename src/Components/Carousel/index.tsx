@@ -6,6 +6,7 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ children }) => {
+  
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
   // Cambiamos el nombre a 'hideButtons' para mayor claridad
