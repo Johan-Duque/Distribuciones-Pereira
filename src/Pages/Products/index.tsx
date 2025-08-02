@@ -1,5 +1,6 @@
-import { Header, Card, Carousel } from "../../Components";
+import { Header, Card, Carousel, Loading } from "../../Components";
 import { useFetch } from "../../Hooks/useFetch";
+import styles from "./Products.module.css";
 
 interface Product {
   img: string;
@@ -15,11 +16,11 @@ function Products() {
   );
 
   if (loading) {
-    return <h2>Loading...</h2>;
+    return <Loading />;
   }
 
   if (error) {
-    return <h2>Error: {error.message}</h2>;
+    return <span className={styles["error-message"]}>Error: {error.message}</span>;
   }
 
   return (
@@ -52,10 +53,9 @@ function Products() {
             company={product.company}
           />
         ))}
-        
       </Carousel>
     </>
   );
 }
 
-export { Products };
+export default Products;

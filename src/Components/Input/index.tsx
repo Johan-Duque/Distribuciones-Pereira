@@ -1,18 +1,20 @@
-import { Controller, type Control, type FieldError } from "react-hook-form";
+import { Controller } from "react-hook-form";
 import { type type_form } from "../../Types";
 import styles from "./Input.module.css";
 import { IMaskInput } from "react-imask";
+import { useHookForm } from "../../Hooks/useHookForm";
 
 interface Props {
   name: keyof type_form;
-  control: Control<type_form>;
   label: string;
   type?: string;
-  error?: FieldError;
   placeholder?: string;
 }
 
-function Input({ name, control, label, type, error, placeholder }: Props) {
+function Input({ name, label, type, placeholder }: Props) {
+  const { control, errors } = useHookForm();
+  const error = errors[name]; 
+
   return (
     <div className={styles.input_container}>
       <label htmlFor={name} className={styles.label}>

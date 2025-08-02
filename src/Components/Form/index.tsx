@@ -1,18 +1,18 @@
-import { type SubmitHandler, useForm, type Control, type FieldErrors} from "react-hook-form";
+import { type SubmitHandler, useForm } from "react-hook-form";
 import { type type_form, schema_form } from "../../Types";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { FormContext } from "../../Context/FormContext";
 import type { ReactNode } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Form.module.css";
 
 interface FormProps {
-  children: (props: {
-    control: Control<type_form>;
-    errors: FieldErrors<type_form>;
-  }) => ReactNode;
+  children: ReactNode;
+  title: string,
+  button_text: string
 }
 
-function Form({ children }: FormProps) {
+function Form({ children, title, button_text }: FormProps) {
   const {
     control,
     handleSubmit,
@@ -47,11 +47,13 @@ function Form({ children }: FormProps) {
 
   return (
     <div className={styles.form_container}>
-      <h2 className={styles.title}>Formulario de Contacto</h2>
+      <h2 className={styles.title}>{title}</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        {children({ control, errors })}
+        <FormContext.Provider value={{ control, errors }}>
+          {children}
+        </FormContext.Provider>
         <button type="submit" className={styles.button}>
-          Submit
+          {button_text}
         </button>
       </form>
     </div>
