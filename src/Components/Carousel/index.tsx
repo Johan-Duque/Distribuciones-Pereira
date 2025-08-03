@@ -5,7 +5,7 @@ interface CarouselProps {
   children: React.ReactNode;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ children }) => {
+function Carousel({ children }: CarouselProps) {
   
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);

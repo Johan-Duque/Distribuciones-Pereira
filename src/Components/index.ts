@@ -7,9 +7,11 @@ export * from './Article'
 export * from './DistributionNetwork'
 export * from './Header'
 export * from './Card'
-export * from './ScrollToTop'
+export * from './ScrollToTop';
+export * from './LazyImage';
 export * from './Form'
 export * from './Input'
 export * from './TextArea'
 export * from './ContactInfo'
 export * from './Loading'
+export * from './Error'

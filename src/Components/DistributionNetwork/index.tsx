@@ -1,4 +1,5 @@
 import styles from './DistributionNetwork.module.css';
+import { LazyImage } from '../../Components';
 
 interface props {
   img: string;
@@ -25,7 +26,8 @@ function DistributionNetwork ({img, title, text_1, text_2 }: props) {
         </p>
 
       </div>
-      <div className={styles.mapSection} style={{backgroundImage: `url(${img})`}}>
+      <div className={styles.mapSection}>
+        <LazyImage src={img} alt='Venezuela' className={styles["mapSection-img"]}/>
       </div>
     </div>
 

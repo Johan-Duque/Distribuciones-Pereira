@@ -5,6 +5,11 @@ import { Link } from "react-router-dom";
 import { TiDropbox } from "react-icons/ti";
 import styles from "./Menu.module.css";
 
+// Funciones de precarga que inician la descarga del módulo de la ruta
+const preloadAbout = () => import("../../Pages/About");
+const preloadProducts = () => import("../../Pages/Products");
+const preloadContact = () => import("../../Pages/Contact");
+
 function Menu() {
   const [viewporttWidth, setViewportWidth] = useState<number>(
     window.innerWidth
@@ -70,17 +75,17 @@ function Menu() {
                   Inicio
                 </Link>
               </li>
-              <li className={styles.li_links}>
+              <li className={styles.li_links} onMouseEnter={preloadAbout}>
                 <Link to="/sobre_nosotros" onClick={handleMenu}>
                   Sobre Nosotros
                 </Link>
               </li>
-              <li className={styles.li_links}>
+              <li className={styles.li_links} onMouseEnter={preloadProducts}>
                 <Link to="/productos" onClick={handleMenu}>
                   Productos
                 </Link>
               </li>
-              <li className={styles.li_links}>
+              <li className={styles.li_links} onMouseEnter={preloadContact}>
                 <Link to="/contacto" onClick={handleMenu}>
                   Contacto
                 </Link>

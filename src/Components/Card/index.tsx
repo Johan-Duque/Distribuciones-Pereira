@@ -1,5 +1,6 @@
-import styles from "./Card.module.css";
+import { LazyImage } from "../../Components";
 import { GiShop } from "react-icons/gi";
+import styles from "./Card.module.css";
 
 interface props {
   img: string;
@@ -15,11 +16,7 @@ function Card ({img, alt_img, title, text, company} : props) {
     <div className={styles.card}>
 
       <div className={styles["image-container"]}>
-        <img
-          src={img}
-          alt={alt_img}
-          className={styles["card-image"]}
-        />
+        <LazyImage src={img} alt={alt_img} className={styles["card-image"]}/>
       </div>
 
       <h2 className={styles.title}>{title}</h2>
