@@ -1,4 +1,4 @@
-import { Title, Grid, Article, Header, Loading } from "../../Components";
+import { Title, Grid, Article, Header, LazyImage } from "../../Components";
 import { EnumColors } from "../../Types";
 import styles from "./Home.module.css";
 
@@ -52,7 +52,8 @@ function Home() {
               color="white"
               align="center"
             />
-            <img src='https://i.ibb.co/hR7hJHDV/Tachira.webp' alt="Tachira" />
+           
+            <LazyImage src="https://i.ibb.co/hR7hJHDV/Tachira.webp" alt="Tachira"/>
           </div>
           <div className={styles.divImg}>
             <Title
@@ -61,7 +62,7 @@ function Home() {
               color="white"
               align="center"
             />
-            <img src='https://i.ibb.co/9m2L8CXK/San-Cristobal.webp' alt="San Cristobal" />
+            <LazyImage src="https://i.ibb.co/9m2L8CXK/San-Cristobal.webp" alt="San Cristobal"/>
           </div>
           <div className={styles.divImg}>
             <Title
@@ -70,7 +71,7 @@ function Home() {
               color="white"
               align="center"
             />
-            <img src='https://i.ibb.co/1JssxrjP/La-Concordia.jpg' alt="La Concordia" />
+            <LazyImage src="https://i.ibb.co/1JssxrjP/La-Concordia.jpg" alt="La Concordia"/>
           </div>
         </Grid>
 

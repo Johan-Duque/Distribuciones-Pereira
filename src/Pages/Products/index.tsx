@@ -1,6 +1,5 @@
-import { Header, Card, Carousel, Loading } from "../../Components";
+import { Header, Card, Carousel, Loading, Error } from "../../Components";
 import { useFetch } from "../../Hooks/useFetch";
-import styles from "./Products.module.css";
 
 interface Product {
   img: string;
@@ -20,7 +19,7 @@ function Products() {
   }
 
   if (error) {
-    return <span className={styles["error-message"]}>Error: {error.message}</span>;
+    return <Error message={error.message}/>;
   }
 
   return (

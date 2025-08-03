@@ -1,0 +1,22 @@
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; /* Ocupa la mayor parte de la altura de la vista */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.errorMessage {
+  background-color: #ffebee; /* Un rojo muy claro */
+  color: #c62828; /* Un rojo oscuro para el texto */
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #ef9a9a; /* Un borde rojo claro */
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

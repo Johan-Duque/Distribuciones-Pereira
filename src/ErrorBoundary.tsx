@@ -1,5 +1,6 @@
-import { Component } from "react";
 import type { ErrorInfo, ReactNode } from "react";
+import { Error } from './Components'
+import { Component } from "react";
 
 interface ErrorBoundaryState {
   hasError: boolean;
@@ -27,7 +28,7 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
 
   render() {
     if (this.state.hasError) {
-      return <span>¡Ha ocurrido un error!</span>
+      return <Error message="¡Ha ocurrido un error en la aplicacion!"/>
     }
 
     return this.props.children
