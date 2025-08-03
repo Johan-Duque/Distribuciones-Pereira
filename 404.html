@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // El truco para redirigir en GitHub Pages para SPAs con react-router
+      const l = window.location;
+      const segment = 1; // Ajusta esto si tu repo es `usuario.github.io` (sería 0)
+
+      sessionStorage.redirect = l.pathname;
+
+      // Redirige de vuelta a la raíz (index.html) con los parámetros de la URL original
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segment).join('/') + '/?p=' +
+        l.pathname.slice(1).split('/').slice(segment).join('/').replace(/&/g, '~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
