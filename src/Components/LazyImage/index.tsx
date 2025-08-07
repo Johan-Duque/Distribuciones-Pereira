@@ -13,8 +13,8 @@ function LazyImage({ src, alt, className }: LazyImageProps) {
   const imgRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
-    let isMounted = true; // Para rastrear si el componente está montado
-    const currentImgRef = imgRef.current; // Captura la referencia actual
+    let isMounted = true; 
+    const currentImgRef = imgRef.current; 
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -23,7 +23,7 @@ function LazyImage({ src, alt, className }: LazyImageProps) {
             const img = new Image();
             img.src = src;
             img.onload = () => {
-              if (isMounted) { // Solo actualiza si el componente sigue montado
+              if (isMounted) { 
                 setIsLoading(false);
                 if (currentImgRef) {
                   currentImgRef.src = src;
@@ -31,7 +31,7 @@ function LazyImage({ src, alt, className }: LazyImageProps) {
               }
             };
             img.onerror = () => {
-              if (isMounted) { // Solo actualiza si el componente sigue montado
+              if (isMounted) { 
                 setIsLoading(false);
                 setIsError(true);
               }
@@ -48,7 +48,7 @@ function LazyImage({ src, alt, className }: LazyImageProps) {
     }
 
     return () => {
-      isMounted = false; // El componente se está desmontando
+      isMounted = false; 
       if (currentImgRef) {
         observer.unobserve(currentImgRef);
       }

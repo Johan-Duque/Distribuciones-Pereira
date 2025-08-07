@@ -1,5 +1,4 @@
 import type { CSSProperties } from "react";
-import { EnumColors } from "../../Types";
 
 interface Props { 
   text: string;
@@ -9,15 +8,24 @@ interface Props {
   className?: string;
 }
 
+const EnumColors = {
+  black: 'var(--black-color)',
+  dark: 'var(--dark-color)',
+  main: 'var(--main-color)',
+  light: 'var(--light-color)',
+  gray: 'var(--gray-color)',
+  white: 'var(--white-color)',
+}
+
 function Title({ text, color, type, align, className }: Props) {
 
   const fontSizeMap: { [key: number]: string } = {
-    1: "clamp(2.5rem, 5vw, 3.75rem)",  // ~40px a 60px
-    2: "clamp(2rem, 4vw, 2.5rem)",    // ~32px a 40px
-    3: "clamp(1.5rem, 3.5vw, 1.75rem)", // ~24px a 28px
-    4: "clamp(1.25rem, 3vw, 1.5rem)",  // ~20px a 25px
-    5: "clamp(1rem, 2.5vw, 1.25rem)",  // ~16px a 20px
-    6: "clamp(0.9rem, 2vw, 1.125rem)", // ~14px a 18px
+    1: "clamp(2.5rem, 5vw, 3.75rem)",  
+    2: "clamp(2rem, 4vw, 2.5rem)",    
+    3: "clamp(1.5rem, 3.5vw, 1.75rem)", 
+    4: "clamp(1.25rem, 3vw, 1.5rem)",  
+    5: "clamp(1rem, 2.5vw, 1.25rem)",  
+    6: "clamp(0.9rem, 2vw, 1.125rem)",
   };
 
   const textColor = color ? EnumColors[color] : undefined;
@@ -26,7 +34,7 @@ function Title({ text, color, type, align, className }: Props) {
     fontSize: fontSizeMap[type], 
     color: textColor,
     textAlign: align,
-    lineHeight: 1.2, // Añadido para mejor legibilidad
+    lineHeight: 1.2, 
   };
 
   const renderTitle = () => {

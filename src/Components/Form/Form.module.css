@@ -21,22 +21,44 @@
     width: 100%;
 }
 
-.button {
+.button, .button-green, .button-red {
     width: 100%;
     padding: 15px;
     border: none;
-    background-color: #141923;
-    color: white;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
 }
 
+.button {
+    background-color: #141923;
+    color: white;
+}
+
+.button-green {
+    background-color: #2ECC71;
+    color: rgb(0, 0, 0);
+}
+
+.button-red {
+    background-color: #E74C3C;
+    color: rgb(255, 255, 255);
+}
+
 .button:hover {
-    /* background-color: #0056b3; */
     background-color: var(--main-color);
     color: var(--gray-color);
+}
+
+.button-green:hover {
+    background-color: #21a759;
+    color: var(--gray-color);
+}
+
+.button-red:hover {
+    background-color: #ab3325;
+    color: var(--white-color);
 }
 
 @media (max-width: 992px) {

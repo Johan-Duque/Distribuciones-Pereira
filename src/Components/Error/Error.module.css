@@ -2,17 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh; /* Ocupa la mayor parte de la altura de la vista */
+  min-height: 90vh; 
   padding: 2rem;
   box-sizing: border-box;
 }
 
 .errorMessage {
-  background-color: #ffebee; /* Un rojo muy claro */
-  color: #c62828; /* Un rojo oscuro para el texto */
+  background-color: #ffebee; 
+  color: #c62828; 
   padding: 1.5rem 2rem;
   border-radius: 8px;
-  border: 1px solid #ef9a9a; /* Un borde rojo claro */
+  border: 1px solid #ef9a9a; 
   max-width: 600px;
   width: 100%;
   text-align: center;

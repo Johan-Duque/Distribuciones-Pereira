@@ -1,30 +1,23 @@
 import styles from "./Article.module.css";
+import { LazyImage } from "../../Components";
 
 interface props {
-  img?: string;
   title: string;
-  children: string;
-  heightImg?: number;
-  backgroundColor?: string;
+  text: string;
+  src: string;
 }
 
-function Article({ title, img, heightImg, backgroundColor, children }: props ) {
+function Article({ title, text, src }: props) {
   return (
-    <section
-      className={styles.article_container}
-      style={{ backgroundColor: backgroundColor }}
-    >
-      {img && (
-        <img
-          src={img}
-          alt="Img"
-          className={styles.article_img}
-          style={{ height: heightImg }}
-        />
-      )}
-      <h3 className={styles.article_title}> {title} </h3>
-      <p className={styles.article_text}> {children} </p>
-    </section>
+    <div className={styles.articleCard}>
+      <div className={styles.containerImage}>
+        <LazyImage src={src} alt={title} className={styles.articleImage} />
+      </div>
+      <div className={styles.articleContent}>
+        <h2 className={styles.articleTitle}>{title}</h2>
+        <p className={styles.articleText}>{text}</p>
+      </div>
+    </div>
   );
 }
 

@@ -29,7 +29,7 @@
 
 .input::placeholder {
     color: #999;
-    opacity: 1; /* Firefox */
+    opacity: 1; 
 }
 
 .input:-ms-input-placeholder {

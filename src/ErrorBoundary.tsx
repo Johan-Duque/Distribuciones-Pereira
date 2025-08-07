@@ -17,13 +17,10 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
   }
 
   static getDerivedStateFromError(error: Error): ErrorBoundaryState {
-    console.log("Derived Error", error)
     return { hasError: true }
   }
 
   componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
-    console.log('Error: ', error)
-    console.log('Error Info: ', errorInfo)
   }
 
   render() {
@@ -36,4 +33,3 @@ class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
 }
 
 export default ErrorBoundary;
-

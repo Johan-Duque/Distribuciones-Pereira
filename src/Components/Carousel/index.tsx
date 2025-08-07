@@ -1,48 +1,43 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, Children, type TouchEvent, type ReactNode } from 'react';
 import styles from './Carousel.module.css';
 
 interface CarouselProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 function Carousel({ children }: CarouselProps) {
   
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
-  // Cambiamos el nombre a 'hideButtons' para mayor claridad
+ 
   const [hideButtons, setHideButtons] = useState(false);
   const carouselContentRef = useRef<HTMLDivElement>(null);
 
-  // Estados para la funcionalidad de swipe
   const [touchStartX, setTouchStartX] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
 
-  const totalItems = React.Children.count(children);
-  const itemsArray = React.Children.toArray(children);
+  const totalItems = Children.count(children);
+  const itemsArray = Children.toArray(children);
 
   useEffect(() => {
     const handleResize = () => {
-      // Si el ancho de la ventana es menor a 900px, ocultamos los botones
       if (window.innerWidth < 900) {
-        setItemsPerPage(2); // Para tablets o móviles grandes (900px a 500px)
+        setItemsPerPage(2); 
         setHideButtons(true);
       }
-      // Si el ancho de la ventana es menor a 500px, mostramos solo 1 item y ocultamos botones
       if (window.innerWidth < 500) {
-        setItemsPerPage(1); // Para móviles pequeños (<500px)
-        setHideButtons(true); // Se mantienen ocultos
+        setItemsPerPage(1); 
+        setHideButtons(true); 
       }
-      // Si el ancho de la ventana es 900px o más, mostramos los botones
       else if (window.innerWidth >= 900) {
         setItemsPerPage(3);
         setHideButtons(false);
       }
-      // Siempre resetear el índice al reajustar para evitar estados inconsistentes
       setCurrentIndex(0);
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Llama al montar para establecer el valor inicial
+    handleResize();
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -57,7 +52,7 @@ function Carousel({ children }: CarouselProps) {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
   };
 
-  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+  const handleTouchStart = (e: TouchEvent<HTMLDivElement>) => {
     setTouchStartX(e.touches[0].clientX);
     setIsDragging(true);
     if (carouselContentRef.current) {
@@ -65,7 +60,7 @@ function Carousel({ children }: CarouselProps) {
     }
   };
 
-  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+  const handleTouchMove = (e: TouchEvent<HTMLDivElement>) => {
     if (!isDragging) return;
 
     const currentTouchX = e.touches[0].clientX;
@@ -78,7 +73,7 @@ function Carousel({ children }: CarouselProps) {
     }
   };
 
-  const handleTouchEnd = (e: React.TouchEvent<HTMLDivElement>) => {
+  const handleTouchEnd = (e: TouchEvent<HTMLDivElement>) => {
     if (!isDragging || touchStartX === 0) {
         setIsDragging(false);
         if (carouselContentRef.current) {
@@ -93,7 +88,7 @@ function Carousel({ children }: CarouselProps) {
     const endTouchX = e.changedTouches[0].clientX;
     const diff = touchStartX - endTouchX;
 
-    const threshold = 50; // Distancia mínima de deslizamiento para cambiar de slide
+    const threshold = 50; 
 
     if (diff > threshold) {
       goToNext();
@@ -116,7 +111,7 @@ function Carousel({ children }: CarouselProps) {
   return (
     <div className={styles.carouselWrapper}>
       <div className={styles.carouselContainer}>
-        {/* Renderiza los botones solo si hideButtons es false (pantalla >= 900px) */}
+    
         {!hideButtons && (
           <button onClick={goToPrevious} className={styles.carouselButton}>
             &#8249;
@@ -148,21 +143,15 @@ function Carousel({ children }: CarouselProps) {
             })}
           </div>
         </div>
-        {/* Renderiza los botones solo si hideButtons es false (pantalla >= 900px) */}
+       
         {!hideButtons && (
           <button onClick={goToNext} className={styles.carouselButton}>
             &#8250;
           </button>
         )}
       </div>
-      <div className={styles.carouselDots}>
-        {Array.from({ length: totalSlides }).map((_, dotIndex) => (
-          <span
-            key={dotIndex}
-            className={`${styles.dot} ${dotIndex === currentIndex ? styles.activeDot : ''}`}
-            onClick={() => setCurrentIndex(dotIndex)}
-          ></span>
-        ))}
+      <div className={styles.carouselPagination}>
+        Página {currentIndex + 1} de {totalSlides}
       </div>
     </div>
   );

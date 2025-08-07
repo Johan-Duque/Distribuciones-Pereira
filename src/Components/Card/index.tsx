@@ -1,5 +1,4 @@
-import { LazyImage } from "../../Components";
-import { GiShop } from "react-icons/gi";
+import { MdCategory } from "react-icons/md";
 import styles from "./Card.module.css";
 
 interface props {
@@ -7,16 +6,16 @@ interface props {
   alt_img: string; 
   title: string;
   text: string;
-  company: string;
+  category: string;
 }
 
-function Card ({img, alt_img, title, text, company} : props) {
+function Card ({img, alt_img, title, text, category} : props) {
 
   return (
     <div className={styles.card}>
 
       <div className={styles["image-container"]}>
-        <LazyImage src={img} alt={alt_img} className={styles["card-image"]}/>
+        <img src={img} alt={alt_img} className={styles["card-image"]}/>
       </div>
 
       <h2 className={styles.title}>{title}</h2>
@@ -26,11 +25,11 @@ function Card ({img, alt_img, title, text, company} : props) {
 
       <div className={styles.details}>
         <div className={styles.price}>
-          <span>Empresa: </span>
+          <span>Categoria: </span>
         </div>
         <div className={styles.countdown}>
-          <GiShop></GiShop>
-          <span>{company}</span>
+          <MdCategory />
+          <span>{category}</span>
         </div>
       </div>
 

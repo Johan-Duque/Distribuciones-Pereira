@@ -15,13 +15,13 @@
   border-radius: 10px;
   overflow: hidden;
   position: relative;
-  padding-bottom: 100%;
+  height: 250px ; 
 }
 
 .card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover !important;
   position: absolute;
   top: 0;
   left: 0;

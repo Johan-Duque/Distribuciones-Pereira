@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { TiDropbox } from "react-icons/ti";
 import styles from "./Menu.module.css";
 
-// Funciones de precarga que inician la descarga del módulo de la ruta
 const preloadAbout = () => import("../../Pages/About");
 const preloadProducts = () => import("../../Pages/Products");
 const preloadContact = () => import("../../Pages/Contact");
