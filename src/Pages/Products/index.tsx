@@ -1,4 +1,11 @@
-import { Header, Card, Carousel, Loading, Error } from "../../Components";
+import {
+  Header,
+  Card,
+  Carousel,
+  Loading,
+  Error,
+  LazyComponent,
+} from "../../Components";
 import { useFetch } from "../../Hooks/useFetch";
 
 interface Product {
@@ -6,21 +13,29 @@ interface Product {
   alt_img: string;
   title: string;
   text: string;
-  company: string;
+  category: string;
+}
+
+interface ProductsByCategory {
+  Products: {
+    [key: string]: Product[];
+  };
 }
 
 function Products() {
-  const { data, loading, error } = useFetch<{ products: Product[] }>(
-    "data.json"
-  );
+  const { data, loading, error } = useFetch<ProductsByCategory>("data.json");
 
   if (loading) {
     return <Loading />;
   }
 
   if (error) {
-    return <Error message={error.message}/>;
+    return <Error message={error.message} />;
   }
+
+  const allProducts: Product[] = data
+    ? Object.values(data.Products).flat()
+    : [];
 
   return (
     <>
@@ -31,26 +46,17 @@ function Products() {
       />
 
       <Carousel>
-        {data?.products.map((product: Product, index: number) => (
-          <Card
-            key={index}
-            img={product.img}
-            alt_img={product.alt_img}
-            title={product.title}
-            text={product.text}
-            company={product.company}
-          />
-        ))}
-
-        {data?.products.map((product: Product, index: number) => (
-          <Card
-            key={index}
-            img={product.img}
-            alt_img={product.alt_img}
-            title={product.title}
-            text={product.text}
-            company={product.company}
-          />
+        {allProducts.map((product, index) => (
+          <LazyComponent>
+            <Card
+              key={index}
+              img={product.img}
+              alt_img={product.alt_img}
+              title={product.title}
+              text={product.text}
+              category={product.category}
+            />
+          </LazyComponent>
         ))}
       </Carousel>
     </>

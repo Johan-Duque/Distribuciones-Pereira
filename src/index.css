@@ -1,17 +1,14 @@
 :root {
-    /* --- Colors --- */
     --black-color:  #000000;
     --dark-color: #7f5700;
     --main-color:  #ffae00 ;
     --light-color:  #ffc953 ;
     --white-color:  #ffffff;
-    --gray-color: #141923; /* rgba(0, 0, 0, 0.879) */
+    --gray-color: #141923;
 
-    /* --- Fonts --- */
     --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     --second-font: 'Times New Roman', Times, serif;
 
-    /* --- Fonts Sizes --- */
     --logos-size: 30px;
     --titles-size: 22px;
     --subTitles-size: 20px;
@@ -19,12 +16,10 @@
     --links-size: 16px;
     --buttons-size: 14px;
 
-    /* --- Animations Duration --- */
     --long-time: 1.5s;
     --average-time: 1s;
     --short-time: .3s;
 
-    /* --- Margins --- */
     --margin-top: 40px;
     --margin-bottom: 40px;
 }
@@ -35,11 +30,3 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-
-/*
-
-servide_id: service_h8mxhbs
-template_id: template_fc9zjv9
-public_key: P8gCZdcPlHFqKr5bx
-
-*/

@@ -1,7 +1,9 @@
 import { Header, Form, Input, TextArea } from "../../Components";
 import { ContactInfo } from "../../Components/ContactInfo";
-import styles from "./Contact.module.css";
+import { FaInstagram } from "react-icons/fa";
+import { FaDirections } from "react-icons/fa";
 import form_styles from "../../Components/Form/Form.module.css";
+import styles from "../Pages.module.css";
 
 function Contact() {
   return (
@@ -13,7 +15,7 @@ function Contact() {
       />
 
       <div className={styles.contact_page_container}>
-        <Form title="Formulario de Contacto" button_text="Enviar">
+        <Form title="Formulario de Contacto" button_text="Enviar" serviceID="service_h8mxhbs" templateID="template_bhizl3c" publicKey="P8gCZdcPlHFqKr5bx">
           <div className={form_styles.row}>
             <Input
               name="name"
@@ -39,7 +41,7 @@ function Contact() {
               name="phone"
               label="Numero Telefonico"
               type="text"
-              placeholder="(0XXX) XXX-XXXX"
+              placeholder="(0xxx) xxx-xxxx"
             />
           </div>
           <TextArea
@@ -51,13 +53,15 @@ function Contact() {
 
         <ContactInfo 
           title="Información de Contacto"
-          subTitle_1="Ubicacion"
-          description_1="Estado Tachira | San Cristobal "
-          subTitle_2="Dirreccion"
-          description_2="Calle 2 con carrera 9 N° 9- 66 | La Concordia"
+          subTitle_1="Dirreccion"
+          svg1={<FaDirections />}
+          description_1="Calle 2 con carrera 9 N° 9- 66 | La Concordia"
+          subTitle_2={`Instagram`}
+          svg2={<FaInstagram />}
+          description_2={`distribuciones_pereira2025`}
+          url="https://www.instagram.com/distribuciones_pereira2025/"
           iframe="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1175.3457485145284!2d-72.23460011862618!3d7.7498726305980465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e661355278f0801%3A0xe0a0649230ad3f90!2sCalle%202%20%26%20Carrera%209%2C%20San%20Crist%C3%B3bal%205001%2C%20T%C3%A1chira!5e0!3m2!1ses!2sve!4v1754168441622!5m2!1ses!2sve"
         />
-
       </div>
     </>
   );

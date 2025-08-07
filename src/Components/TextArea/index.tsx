@@ -1,7 +1,7 @@
+import { useHookForm } from '../../Hooks/useHookForm'
 import { Controller } from 'react-hook-form'
 import { type type_form } from '../../Types'
 import styles from './TextArea.module.css'
-import { useHookForm } from '../../Hooks/useHookForm'
 
 interface Props {
     name: keyof type_form, 

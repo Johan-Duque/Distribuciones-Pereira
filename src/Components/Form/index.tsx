@@ -2,17 +2,20 @@ import { type SubmitHandler, useForm } from "react-hook-form";
 import { type type_form, schema_form } from "../../Types";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormContext } from "../../Context/FormContext";
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Form.module.css";
 
 interface FormProps {
   children: ReactNode;
-  title: string,
-  button_text: string
+  title: string;
+  button_text: string;
+  serviceID: string,
+  templateID: string,
+  publicKey: string,
 }
 
-function Form({ children, title, button_text }: FormProps) {
+function Form({ children, title, button_text, serviceID, templateID, publicKey }: FormProps) {
   const {
     control,
     handleSubmit,
@@ -28,19 +31,16 @@ function Form({ children, title, button_text }: FormProps) {
     },
   });
 
+  const [validation, setValidation] = useState<number>(0);
+
   const onSubmit: SubmitHandler<type_form> = (data) => {
-    const serviceID = "service_h8mxhbs";
-    const templateID = "template_bhizl3c";
-    const publicKey = "P8gCZdcPlHFqKr5bx";
 
     emailjs.send(serviceID, templateID, data, publicKey).then(
-      (result) => {
-        console.log("Mensaje enviado con éxito!", result.text);
-        alert("¡Mensaje enviado!");
+      () => {
+        setValidation(1);
       },
-      (error) => {
-        console.log("Error al enviar el mensaje:", error.text);
-        alert("Error al enviar el mensaje.");
+      () => {
+        setValidation(2);
       }
     );
   };
@@ -52,9 +52,15 @@ function Form({ children, title, button_text }: FormProps) {
         <FormContext.Provider value={{ control, errors }}>
           {children}
         </FormContext.Provider>
-        <button type="submit" className={styles.button}>
-          {button_text}
-        </button>
+        {validation === 0 ? (
+          <button type="submit" className={styles.button}>
+            {button_text}
+          </button>
+        ) : (
+          <button type="submit" className={ validation === 1 ? (`${styles['button-green']}`) : (`${styles['button-red']}`) }>
+            { validation === 1 ? `¡Mensaje enviado!` : `Error al enviar el mensaje.` }
+          </button>
+        )}
       </form>
     </div>
   );

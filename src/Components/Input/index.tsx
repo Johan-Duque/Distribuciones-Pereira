@@ -1,8 +1,8 @@
+import { useHookForm } from "../../Hooks/useHookForm";
 import { Controller } from "react-hook-form";
 import { type type_form } from "../../Types";
-import styles from "./Input.module.css";
 import { IMaskInput } from "react-imask";
-import { useHookForm } from "../../Hooks/useHookForm";
+import styles from "./Input.module.css";
 
 interface Props {
   name: keyof type_form;

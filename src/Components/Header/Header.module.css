@@ -31,8 +31,6 @@ section h2 {
   box-sizing: border-box;
 }
 
-/* Responsive Design */ 
-
 @media (max-width: 768px) {
   .Header__div_content p {
     max-width: 400px;
@@ -43,10 +41,6 @@ section h2 {
 
   .Header__div_content h1 {
     font-size: 30px !important;
-  }
-
-  .Header__div_content p {
-    
   }
 
 }

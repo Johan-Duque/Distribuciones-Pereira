@@ -65,7 +65,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.carouselDots {
+.carouselPagination {
   width: 100%; 
   display: flex; 
   justify-content: center; 
@@ -73,19 +73,8 @@
   margin-top: 20px; 
   margin-bottom: var(--margin-bottom);
   z-index: 15; 
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: var(--gray-color);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dot.activeDot {
-  background-color: var(--main-color);
+  font-size: 18px;
+  color: var(--gray-color);
 }
 
 @media (max-width: 900px) {
