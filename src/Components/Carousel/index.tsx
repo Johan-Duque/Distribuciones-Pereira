@@ -1,15 +1,17 @@
 import { useState, useEffect, useRef, Children, type TouchEvent, type ReactNode } from 'react';
 import styles from './Carousel.module.css';
+import { useSeekerContext } from '../../Hooks';
+import { Loading } from '../Loading';
 
 interface CarouselProps {
   children: ReactNode;
 }
 
 function Carousel({ children }: CarouselProps) {
-  
+  const { LoadingSeeker } = useSeekerContext();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(3);
- 
+
   const [hideButtons, setHideButtons] = useState(false);
   const carouselContentRef = useRef<HTMLDivElement>(null);
 
@@ -22,12 +24,12 @@ function Carousel({ children }: CarouselProps) {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 900) {
-        setItemsPerPage(2); 
+        setItemsPerPage(2);
         setHideButtons(true);
       }
       if (window.innerWidth < 500) {
-        setItemsPerPage(1); 
-        setHideButtons(true); 
+        setItemsPerPage(1);
+        setHideButtons(true);
       }
       else if (window.innerWidth >= 900) {
         setItemsPerPage(3);
@@ -42,6 +44,10 @@ function Carousel({ children }: CarouselProps) {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  useEffect(() => {
+    goToStart();
+  }, [LoadingSeeker])
+
   const totalSlides = Math.ceil(totalItems / itemsPerPage);
 
   const goToNext = () => {
@@ -50,6 +56,10 @@ function Carousel({ children }: CarouselProps) {
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + totalSlides) % totalSlides);
+  };
+
+  const goToStart = () => {
+  setCurrentIndex(0);
   };
 
   const handleTouchStart = (e: TouchEvent<HTMLDivElement>) => {
@@ -65,7 +75,7 @@ function Carousel({ children }: CarouselProps) {
 
     const currentTouchX = e.touches[0].clientX;
     const diff = touchStartX - currentTouchX;
-    
+
     if (carouselContentRef.current) {
       const slideWidth = carouselContentRef.current.clientWidth;
       const targetTranslateX = -currentIndex * slideWidth;
@@ -88,7 +98,7 @@ function Carousel({ children }: CarouselProps) {
     const endTouchX = e.changedTouches[0].clientX;
     const diff = touchStartX - endTouchX;
 
-    const threshold = 50; 
+    const threshold = 50;
 
     if (diff > threshold) {
       goToNext();
@@ -99,11 +109,11 @@ function Carousel({ children }: CarouselProps) {
             carouselContentRef.current.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
     }
-    
+
     if (carouselContentRef.current) {
       carouselContentRef.current.style.transition = 'transform 0.5s ease-in-out';
     }
-    
+
     setTouchStartX(0);
   };
 
@@ -111,7 +121,7 @@ function Carousel({ children }: CarouselProps) {
   return (
     <div className={styles.carouselWrapper}>
       <div className={styles.carouselContainer}>
-    
+
         {!hideButtons && (
           <button onClick={goToPrevious} className={styles.carouselButton}>
             &#8249;
@@ -126,24 +136,30 @@ function Carousel({ children }: CarouselProps) {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
           >
-            {Array.from({ length: totalSlides }).map((_, slideIndex) => {
-              const slideStart = slideIndex * itemsPerPage;
-              const slideEnd = Math.min(slideStart + itemsPerPage, totalItems);
-              const slideItems = itemsArray.slice(slideStart, slideEnd);
+            {LoadingSeeker ? (
+              <div className={styles.loadingContainer}>
+                <Loading />
+              </div>
+            ) : (
+              Array.from({ length: totalSlides }).map((_, slideIndex) => {
+                const slideStart = slideIndex * itemsPerPage;
+                const slideEnd = Math.min(slideStart + itemsPerPage, totalItems);
+                const slideItems = itemsArray.slice(slideStart, slideEnd);
 
-              return (
-                <div key={slideIndex} className={styles.carouselSlide}>
-                  {slideItems.map((item, index) => (
-                    <div key={index} className={styles.carouselChildWrapper}>
-                      {item}
-                    </div>
-                  ))}
-                </div>
-              );
-            })}
+                return (
+                  <div key={slideIndex} className={styles.carouselSlide}>
+                    {slideItems.map((item, index) => (
+                      <div key={index} className={styles.carouselChildWrapper}>
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                );
+              })
+            )}
           </div>
         </div>
-       
+
         {!hideButtons && (
           <button onClick={goToNext} className={styles.carouselButton}>
             &#8250;

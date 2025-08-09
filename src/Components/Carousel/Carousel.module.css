@@ -77,6 +77,29 @@
   color: var(--gray-color);
 }
 
+.loadingContainer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin: 0 auto ;
+}
+
+@media (max-width: 500px) {
+  .searchBarContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .searchBar {
+    max-width: 100%;
+  }
+  .filterButton {
+    width: 100%;
+  }
+}
+
+
 @media (max-width: 900px) {
   .carouselSlide {
     gap: 15px;

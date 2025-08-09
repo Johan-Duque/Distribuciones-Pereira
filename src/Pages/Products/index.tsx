@@ -5,8 +5,9 @@ import {
   Loading,
   Error,
   LazyComponent,
+  Seeker,
 } from "../../Components";
-import { useFetch } from "../../Hooks/useFetch";
+import { useFetch, useSeekerContext } from "../../Hooks";
 
 interface Product {
   img: string;
@@ -24,6 +25,7 @@ interface ProductsByCategory {
 
 function Products() {
   const { data, loading, error } = useFetch<ProductsByCategory>("data.json");
+  const { methodRender, filteredProducts } = useSeekerContext();
 
   if (loading) {
     return <Loading />;
@@ -37,6 +39,7 @@ function Products() {
     ? Object.values(data.Products).flat()
     : [];
 
+
   return (
     <>
       <Header
@@ -45,20 +48,39 @@ function Products() {
         height={60}
       />
 
+     <div>
+       <Seeker />
+
       <Carousel>
-        {allProducts.map((product, index) => (
-          <LazyComponent>
-            <Card
-              key={index}
-              img={product.img}
-              alt_img={product.alt_img}
-              title={product.title}
-              text={product.text}
-              category={product.category}
-            />
-          </LazyComponent>
-        ))}
+        {methodRender === 0 &&
+          allProducts.map((product, index) => (
+            <LazyComponent key={`all-${index}`}>
+              <Card
+                img={product.img}
+                alt_img={product.alt_img}
+                title={product.title}
+                text={product.text}
+                category={product.category}
+              />
+            </LazyComponent>
+          ))}
+
+        {/* Aquí está la corrección: usamos 'filteredProducts.map' directamente */}
+        {methodRender === 1 &&
+          filteredProducts.map((product, index) => (
+            <LazyComponent >
+              <Card
+                key={`filtered-${index}`}
+                img={product.img}
+                alt_img={product.alt_img}
+                title={product.title}
+                text={product.text}
+                category={product.category}
+              />
+            </LazyComponent>
+          ))}
       </Carousel>
+     </div>
     </>
   );
 }

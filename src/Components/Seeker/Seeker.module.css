@@ -1,0 +1,138 @@
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: var(--margin-top) auto 0px auto;
+  max-width: 1200px;
+  padding: 0 10px;
+}
+
+.searchBar {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-color, #ccc);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
+  background-color: white;
+  position: relative;
+}
+
+.searchInput {
+  border: none;
+  padding: 10px 15px;
+  flex-grow: 1;
+  font-size: 16px;
+  outline: none;
+  background-color: transparent;
+}
+
+.searchButton {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color, #333);
+}
+
+.filterButtonContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.filterButton {
+  background-color: transparent;
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all var(--short-time) ease;
+  height: 100%;
+  background-color: var(--gray-color);
+}
+
+.filterButton:hover {
+  background-color: var(--light-color);
+  color: var(--gray-color);
+}
+
+.filterDropdown {
+  display: none; /* Oculto por defecto */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid var(--gray-color, #ccc);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  min-width: 150px;
+  z-index: 20;
+}
+
+.filterDropdown.show {
+  display: block;
+}
+
+.filterDropdown a {
+  display: block;
+  padding: 8px 15px;
+  text-decoration: none;
+  color: var(--text-color, #333);
+  transition: background-color 0.2s ease;
+}
+
+.filterDropdown a:hover {
+  background-color: var(--light-gray-color, #f5f5f5);
+}
+
+/* Puedes usar JavaScript para mostrar el dropdown al hacer clic en el botón */
+.filterButtonContainer:hover .filterDropdown {
+  display: block;
+}
+
+.loadingBarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centra la barra horizontalmente */
+  align-items: center;
+  margin-top: 10px; /* Un poco de espacio para separarlo del input */
+  height: 4px; /* O el alto que desees */
+}
+
+.loadingBar {
+  width: 150px; /* Ancho fijo para la barra, puedes ajustarlo */
+  height: 100%;
+  background-color: #3b82f6;
+  animation: loading 1s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0% { transform: scaleX(0); }
+  50% { transform: scaleX(1); }
+  100% { transform: scaleX(0); }
+}
+
+
+@media (max-width: 500px) {
+  .searchBarContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .searchBar {
+    max-width: 100%;
+  }
+  .filterButton {
+    width: 100%;
+  }
+}

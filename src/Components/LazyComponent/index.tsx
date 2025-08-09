@@ -21,7 +21,7 @@ function LazyComponent({ children }: LazyComponentProps) {
         }
       },
       {
-        rootMargin: "200px 200px 200px 200px",
+        rootMargin: "0px 200px 200px 200px",
       }
     );
 

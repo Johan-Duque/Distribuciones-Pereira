@@ -4,6 +4,7 @@ import { Home } from "./Pages";
 import { ScrollToTop, Loading } from "./Components";
 import App from "./App";
 import ErrorBoundary from "./ErrorBoundary";
+import { SeekerProvider } from "./Context/SeekerContext";
 
 const About = lazy(() => import("./Pages/About"));
 const Products = lazy(() => import("./Pages/Products"));
@@ -41,7 +42,9 @@ function AppRouter() {
             element={
               <ErrorBoundary>
                 <Suspense fallback={<Loading />}>
-                  <Products />
+                  <SeekerProvider>
+                    <Products />
+                  </SeekerProvider>
                 </Suspense>
               </ErrorBoundary>
             }

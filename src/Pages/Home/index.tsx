@@ -1,4 +1,11 @@
-import { Title, Grid, Article, Header, DivImage } from "../../Components";
+import {
+  Title,
+  Grid,
+  Article,
+  Header,
+  DivImage,
+  LazyComponent,
+} from "../../Components";
 import styles from "../Pages.module.css";
 
 function Home() {
@@ -13,24 +20,32 @@ function Home() {
       <section className={styles.home_section_1}>
         <Title text="¿Que ofrecemos?" type={2} color="black" align="center" />
         <Grid maxWidth>
-          <Article
-            title="Ventas al mayor"
-            text="Soluciones de suministro para tu negocio. Ofrecemos ventas al por
+          <LazyComponent>
+            <Article
+              title="Ventas al mayor"
+              text="Soluciones de suministro para tu negocio. Ofrecemos ventas al por
             mayor con una entrega eficiente que optimiza tus operaciones."
-            src="https://i.ibb.co/Cs6bn4q8/prueba.png"
-          />
-          <Article
-            title="Ventas al detal"
-            text="Suministro flexible para tu negocio. Ofrecemos una compra cómoda y
+              src="https://i.ibb.co/VYFnCxck/Ventas-al-mayor.jpg"
+            />
+          </LazyComponent>
+
+          <LazyComponent>
+            <Article
+              title="Ventas al detal"
+              text="Suministro flexible para tu negocio. Ofrecemos una compra cómoda y
             simple, adquiriendo productos individualmente según tus necesidades."
-            src="https://i.ibb.co/sJqxJ90T/Ventas-al-detal.png"
-          />
-          <Article
-            title="Envío multiestatal"
-            text=" Soluciones de envío a nivel regional. Manejamos la logística para
+              src="https://i.ibb.co/TBMDHrcq/Ventas-al-detal.jpg"
+            />
+          </LazyComponent>
+
+          <LazyComponent>
+            <Article
+              title="Envío multiestatal"
+              text=" Soluciones de envío a nivel regional. Manejamos la logística para
             que tus productos lleguen de forma eficiente a múltiples regiones."
-            src="https://i.ibb.co/vykgQrV/Envios-multi-regional.png"
-          />
+              src="https://i.ibb.co/vykgQrV/Envios-multi-regional.png"
+            />
+          </LazyComponent>
         </Grid>
       </section>
 
@@ -42,21 +57,29 @@ function Home() {
           align="center"
         />
         <Grid maxWidth>
-          <DivImage
-            src="https://i.ibb.co/hR7hJHDV/Tachira.webp"
-            alt="Tachira"
-            text="Estado / Tachira"
-          />
-          <DivImage
-            src="https://i.ibb.co/9m2L8CXK/San-Cristobal.webp"
-            alt="San Cristobal"
-            text="Ciudad / San Cristobal"
-          />
-          <DivImage
-            src="https://i.ibb.co/1JssxrjP/La-Concordia.jpg"
-            alt="La Concordia"
-            text="Municipio / La Concordia"
-          />
+          <LazyComponent>
+            <DivImage
+              src="https://i.ibb.co/hR7hJHDV/Tachira.webp"
+              alt="Tachira"
+              text="Estado / Tachira"
+            />
+          </LazyComponent>
+
+          <LazyComponent>
+            <DivImage
+              src="https://i.ibb.co/9m2L8CXK/San-Cristobal.webp"
+              alt="San Cristobal"
+              text="Ciudad / San Cristobal"
+            />
+          </LazyComponent>
+
+          <LazyComponent>
+            <DivImage
+              src="https://i.ibb.co/1JssxrjP/La-Concordia.jpg"
+              alt="La Concordia"
+              text="Municipio / La Concordia"
+            />
+          </LazyComponent>
         </Grid>
       </section>
     </>
