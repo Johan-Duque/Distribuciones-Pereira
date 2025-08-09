@@ -1,5 +1,4 @@
 import styles from "./Article.module.css";
-import { LazyImage } from "../../Components";
 
 interface props {
   title: string;
@@ -11,7 +10,7 @@ function Article({ title, text, src }: props) {
   return (
     <div className={styles.articleCard}>
       <div className={styles.containerImage}>
-        <LazyImage src={src} alt={title} className={styles.articleImage} />
+        <img src={src} alt={title} className={styles.articleImage} />
       </div>
       <div className={styles.articleContent}>
         <h2 className={styles.articleTitle}>{title}</h2>

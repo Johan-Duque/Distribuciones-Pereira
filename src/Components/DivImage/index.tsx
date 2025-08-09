@@ -1,4 +1,4 @@
-import { LazyImage, Title } from "../";
+import { Title } from "../";
 import styles from "./DivImage.module.css";
 
 interface DivImageProps {
@@ -10,7 +10,7 @@ interface DivImageProps {
 function DivImage ({ src, alt, text }: DivImageProps)  {
   return (
     <div className={styles.locationCard}>
-      <LazyImage src={src} alt={alt} className={styles.locationImage} />
+      <img src={src} alt={alt} className={styles.locationImage} />
       <div className={styles.locationDescription}>
         <Title text={text} type={3} color="white" align="center" />
       </div>
