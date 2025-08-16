@@ -1,0 +1,528 @@
+{
+  "Products": {
+    "Anime": [
+      {
+        "img": "https://i.ibb.co/Kc5xfrc0/Bandejas-Termicas.jpg",
+        "alt_img": "Bandejas Termicas",
+        "title": "Bandejas Termicas",
+        "text": "Ofrecemos modelos planos (FT1, FT2, A1, B1) y profundos (FT1 H, A2, B2) entre otros modelos.",
+        "category": "Anime"
+      },
+      {
+        "img": "https://i.ibb.co/Q3dJBZ1R/Cajas-Termicas.jpg",
+        "alt_img": "Cajas Termicas",
+        "title": "Cajas Termicas",
+        "text": "Contamos con los modelos CT1 (para hamburguesa), CT1 alto, CT2 con division, CTK1, entre otros",
+        "category": "Anime"
+      },
+      {
+        "img": "https://i.ibb.co/fYgj514W/Discos-de-anime.jpg",
+        "alt_img": "Discos de anime",
+        "title": "Discos de anime",
+        "text": "Discos de anime para todo tipo de alimentos. Tenemos modelos de 17, 21, 24.5, 26, 30 y 36 cm",
+        "category": "Anime"
+      },
+      {
+        "img": "https://i.ibb.co/NgLXLgbQ/Platos-Termicos.jpg",
+        "alt_img": "Platos Termicos",
+        "title": "Platos Termicos",
+        "text": "Ofrecemos platos térmicos de anime en diámetros del #06 al #11, con paquetes de 200, 400 y 500 unidades",
+        "category": "Anime"
+      }
+    ],
+    "Bolsas": [
+      {
+        "img": "https://i.ibb.co/pjZYLbXz/Bolsas-De-Aluminio.jpg",
+        "alt_img": "Bolsas De Aluminio",
+        "title": "Bolsas De Aluminio",
+        "text": "Ofrecemos bolsas de aluminio en varios tamaños, incluyendo 5x5, 6x6, 6x9, 7x11 y 8x12.",
+        "category": "Bolsas"
+      },
+      {
+        "img": "https://i.ibb.co/Vp5RwXzD/Bolsas-De-Baja-Densidad.jpg",
+        "alt_img": "Bolsas De Baja Densidad",
+        "title": "Bolsas De Baja Densidad",
+        "text": "Tenemos bolsas para hielo casero o zanahorias, con empaques que van desde 100 hasta 500 bolsas.",
+        "category": "Bolsas"
+      },
+      {
+        "img": "https://i.ibb.co/27X2ggdc/Bolsas-Canilla.jpg",
+        "alt_img": "Bolsas Canilla",
+        "title": "Bolsas Canilla",
+        "text": "Ofrecemos bolsas Canilla para pan en tres tamaños (para 1, 2 y 3 panes), que vienen en empaques de 1000 unidades.",
+        "category": "Bolsas"
+      },
+      {
+        "img": "https://i.ibb.co/5JvG6nz/Bolsas-Chillona.jpg",
+        "alt_img": "Bolsas Chillonas",
+        "title": "Bolsas Chillona",
+        "text": "Tenemos varios tamaños, desde 1/2 kilo hasta 5 kilos, que se venden en empaques de 1000 unidades.",
+        "category": "Bolsas"
+      },
+      {
+        "img": "https://i.ibb.co/39CcyzQv/Bolsas-Con-Asa.jpg",
+        "alt_img": "Bolsas Con Asa",
+        "title": "Bolsas Con Asa",
+        "text": "Ofrecemos bolsas con asa en tamaños de 1.5 a 30 kilos, con opciones de color y empaques de 500 o 1000 unidades.",
+        "category": "Bolsas"
+      },
+      {
+        "img": "https://i.ibb.co/CKzczg36/Bolsas-Para-Pulpa.jpg",
+        "alt_img": "Bolsas Para Pulpa",
+        "title": "Bolsas Para Pulpa",
+        "text": "Bolsas para pulpa, diseñadas para empacar 1 kilo de producto, disponibles en dos tamaños: 15x25 cm y 20x30 cm.",
+        "category": "Bolsas"
+      },
+      {
+        "img": "https://i.ibb.co/DHCg9SQQ/Bolsas-Tobita.jpg",
+        "alt_img": "Bolsas Tobita",
+        "title": "Bolsas Tobita",
+        "text": "Tenemos bolsas Tobita en varios tamaños (de 60 a 200 litros), con empaques de 200 a 500 unidades",
+        "category": "Bolsas"
+      },
+      {
+        "img": "https://i.ibb.co/DPVyV4Nh/Bolsas-Zipper.jpg",
+        "alt_img": "Bolsas Zipper",
+        "title": "Bolsas Zipper",
+        "text": "Ofrecemos una variedad de tamaños, desde 2x2 hasta 8x10. Todas se venden en empaques de 1000 unidades.",
+        "category": "Bolsas"
+      }
+    ],
+    "Vasos": [
+      {
+        "img": "https://i.ibb.co/MDVNjn58/Tapa-Domo.jpg",
+        "alt_img": "Tapas Domo",
+        "title": "Tapas Domo",
+        "text": "Ofrecemos tapas para diferentes tamaños (PET, 10 oz y 12/14 oz), todas en empaques de 100 unidades.",
+        "category": "Vasos"
+      },
+      {
+        "img": "https://i.ibb.co/7x6hkZfQ/Vasos.jpg",
+        "alt_img": "Vasos",
+        "title": "Vasos",
+        "text": "Tenemos vasos llanos en diversos tamaños, con empaques que contienen desde 600 hasta 5000 unidades.",
+        "category": "Vasos"
+      }
+    ],
+    "Envases": [
+      {
+        "img": "https://i.ibb.co/JwxSCVvj/Envase-De-Tina.jpg",
+        "alt_img": "Envases De Tina",
+        "title": "Envases De Tina",
+        "text": "Envases tipo tina transparentes en capacidades de 1 a 32 oz, con empaques que contienen de 240 a 1000 unidades.",
+        "category": "Envases"
+      },
+      {
+        "img": "https://i.ibb.co/wNgKxsSV/Envase-Transparente.jpg",
+        "alt_img": "Envases Transparentes",
+        "title": "Envases Transparentes",
+        "text": "Tenemos envases transparentes con tapa en diversos tamaños, todos en empaques de 200 unidades.",
+        "category": "Envases"
+      }
+    ],
+    "Hogar": [
+      {
+        "img": "https://i.ibb.co/VWXdC5rR/Envoltura-Plastica.jpg",
+        "alt_img": "Envolturas Plasticas",
+        "title": "Envolturas Plasticas",
+        "text": "Envoltura plástica industrial. Rollo de 5 kg, 25 cm de ancho y 10.5 micras de grosor. Alta resistencia",
+        "category": "Hogar"
+      },
+      {
+        "img": "https://i.ibb.co/TMWr1DVh/Papel-Aluminio.jpg",
+        "alt_img": "Papeles Aluminio",
+        "title": "Papeles Aluminio",
+        "text": "Paquete de 12 rollos, cada uno de 6 metros de largo. Presentación individual.",
+        "category": "Hogar"
+      },
+      {
+        "img": "https://i.ibb.co/0pk4Sv7V/Papel-Higienico.jpg",
+        "alt_img": "Papeles Higienicos",
+        "title": "Papeles Higienicos",
+        "text": "Paquete de 32 rollos de 120 metros cada uno. Ideal para consumo masivo en negocios",
+        "category": "Hogar"
+      },
+      {
+        "img": "https://i.ibb.co/39hp22NN/Papel-Institucional.jpg",
+        "alt_img": "Papeles Institucionales",
+        "title": "Papeles Institucionales",
+        "text": "Papel para dispensador de baño. Paquete de 4 rollos de 9 pulgadas. Uso comercial e industrial",
+        "category": "Hogar"
+      }
+    ],
+    "Quincalleria": [
+      {
+        "img": "https://i.ibb.co/pBfX11mm/Bombillo-100-W.jpg",
+        "alt_img": "Bombillos de 100W",
+        "title": "Bombillos 100W",
+        "text": "Bombillo incandescente de 100W, ideal para iluminación general en el hogar o la oficina. Paquete de 100 unidades.",
+        "category": "Quincalleria"
+      },
+      {
+        "img": "https://i.ibb.co/RkYy4wDX/Candados.jpg",
+        "alt_img": "Candados",
+        "title": "Candados 25/38",
+        "text": "Candados de seguridad de 25 y 38mm. Paquete de 12 unidades. Para uso en puertas, armarios o maletas.",
+        "category": "Quincalleria"
+      },
+      {
+        "img": "https://i.ibb.co/bRJCG1St/Pabilo-Blanco.jpg",
+        "alt_img": "Pabílos Blancos",
+        "title": "Pabílos Blancos",
+        "text": "Pabilo de algodón blanco. Paquete de 100 rollos. Ideal para manualidades, velas o usos generales.",
+        "category": "Quincalleria"
+      },
+      {
+        "img": "https://i.ibb.co/CpByQD3Y/Recolector-de-Orina.jpg",
+        "alt_img": "Recolectores de Orina",
+        "title": "Recolectores de Orina",
+        "text": "Recolector de orina desechable. Paquete de 100 unidades. Para uso médico o de cuidado personal.",
+        "category": "Quincalleria"
+      },
+      {
+        "img": "https://i.ibb.co/6cd9YwNV/Regleta-de-6-Tomas.jpg",
+        "alt_img": "Regletas de 6 Tomas",
+        "title": "Regletas de 6 Tomas",
+        "text": "Regleta de corriente con 6 tomas para múltiples conexiones. Paquete de 6 unidades.",
+        "category": "Quincalleria"
+      },
+      {
+        "img": "https://i.ibb.co/bMjcpDQB/Socates-de-Porcelana.jpg",
+        "alt_img": "Socates de Porcelana",
+        "title": "Socates de Porcelana",
+        "text": "Socates de porcelana para bombillos. Paquete de 20 unidades. Resistentes al calor y duraderos.",
+        "category": "Quincalleria"
+      },
+      {
+        "img": "https://i.ibb.co/mVq97ry9/Docena-de-Taco.jpg",
+        "alt_img": "Docenas de Taco",
+        "title": "Docenas de Taco",
+        "text": "Paquete de tacos de madera o plástico, utilizados para fijaciones en paredes. 12 unidades por docena.",
+        "category": "Quincalleria"
+      },
+      {
+        "img": "https://i.ibb.co/k2d91rYp/Velones.jpg",
+        "alt_img": "Velones",
+        "title": "Velones",
+        "text": "Velones para uso decorativo. Se presentan en paquetes de 35 unidades. Ideal para crear ambientes acogedores.",
+        "category": "Quincalleria"
+      }
+    ],
+    "Limpieza": [
+      {
+        "img": "https://i.ibb.co/bRYKT6qW/Esponja-Doble-Uso.jpg",
+        "alt_img": "Esponjas Doble Uso",
+        "title": "Esponjas Doble Uso",
+        "text": "Esponja con doble superficie, una suave y otra abrasiva. Paquete de 10 unidades. Para limpieza de cocina y superficies.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/KcfnN43h/Cepillo-de-Barrer.jpg",
+        "alt_img": "Cepillos de Barrer",
+        "title": "Cepillos de Barrer",
+        "text": "Cepillo de barrer tipo Dalia, sin palo. Paquete de 12 unidades. Para uso en interiores y exteriores.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/8Tv5Gn8/Cepillo-Planchita.jpg",
+        "alt_img": "Cepillos de Lavar Planchita",
+        "title": "Cepillos Planchita",
+        "text": "Cepillo de lavar con cerdas rígidas, tipo planchita. Paquete de 12 unidades. Ideal para limpieza profunda.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/LDTGqsxm/Matarana.jpg",
+        "alt_img": "Mataranas",
+        "title": "Mataranas",
+        "text": "Utensilio para desatascar tuberías. Paquete de 6 unidades. Para uso en baños y cocinas.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/JjrPdGS8/Lampazo-400.jpg",
+        "alt_img": "Lampazos",
+        "title": "Lampazos 400",
+        "text": "Lampazo de 400 gramos, sin palo. Paquete de 12 unidades. Para limpieza de pisos.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/fb2zjYc/Cepillo-Anat-mico.jpg",
+        "alt_img": "Cepillos de Lavar Anatómicos",
+        "title": "Cepillos Anatómicos",
+        "text": "Cepillo de lavar con diseño anatómico para un agarre más cómodo. Paquete de 12 unidades.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/MxjdfsL4/Chupa-Sanitario.jpg",
+        "alt_img": "Chupas Sanitarios",
+        "title": "Chupas Sanitarios",
+        "text": "Desatascador de sanitarios. Paquete de 12 unidades. Herramienta esencial para el mantenimiento de baños.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/Ff4YQm2/Coleto-3-Rayas.jpg",
+        "alt_img": "Coletos",
+        "title": "Coletos 3 Rayas",
+        "text": "Coleto de trapeador de 3 rayas. Paquete de 12 unidades. Para limpieza de pisos duros.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/R4yxynVr/Esponja-de-Acero.jpg",
+        "alt_img": "Esponjas de Acero",
+        "title": "Esponjas de Acero",
+        "text": "Esponja de lana de acero. Paquete de 12 unidades. Ideal para remover suciedad difícil en ollas y sartenes.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/dwmtB64S/Pa-o-Amarillo.jpg",
+        "alt_img": "Paños Amarillos",
+        "title": "Paños Amarillos",
+        "text": "Paño de limpieza de color amarillo, de 40x50 cm. Paquete de 12 unidades. Para uso general en superficies.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/HDPzpgYv/Pa-o-Microfibra.jpg",
+        "alt_img": "Paños de Microfibra",
+        "title": "Paños Microfibra",
+        "text": "Paño de limpieza de microfibra de 50x60 cm. Paquete de 12 unidades. Para una limpieza sin dejar rastros.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/FkkVCWL3/Palos-de-Madera-RG.jpg",
+        "alt_img": "Palos de Madera",
+        "title": "Palos de Madera",
+        "text": "Palos de madera de tamaño estándar RG. Paquete de 12 unidades. Para uso general en limpieza.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/DfBKJxF0/Pa-o-de-Mano.jpg",
+        "alt_img": "Paños de Mano",
+        "title": "Paños de Mano",
+        "text": "Paño de mano de uso doméstico. Paquete de 12 unidades. Ideal para secado de manos.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/nsWvnNnc/Rastrillo-Alba-il-14-D.jpg",
+        "alt_img": "Rastrillos de Albañil",
+        "title": "Rastrillos Albañil 14D",
+        "text": "Rastrillo para albañilería con 14 dientes. Paquete de 12 unidades. Herramienta para construcción.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/Gv4nw6xC/Rastrillo-Agr-cola-22-D.jpg",
+        "alt_img": "Rastrillos Agrícola",
+        "title": "Rastrillos Agrícolas 22D",
+        "text": "Rastrillo agrícola de 22 dientes, sin palo. Paquete de 12 unidades. Ideal para jardinería y agricultura.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/tpcV9sV4/Recogedor-Eco.jpg",
+        "alt_img": "Recogedores Ecológicos",
+        "title": "Recogedores Eco",
+        "text": "Recogedor de basura ecológico. Paquete de 12 unidades. Fabricado con materiales sostenibles.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/xtG1dpw1/Tobo-Pl-stico.jpg",
+        "alt_img": "Tobos Plásticos",
+        "title": "Tobos Plásticos",
+        "text": "Tobo de plástico de 10 y 12 litros. Paquete de 12 unidades. Para almacenamiento de agua o limpieza.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/rKBdNyKT/Esponja-Colores-Brio.jpg",
+        "alt_img": "Esponjas de Colores",
+        "title": "Esponjas Colores",
+        "text": "Esponjas de limpieza de colores Brio. Paquete de 12 unidades. Agradables y eficaces.",
+        "category": "Limpieza"
+      },
+      {
+        "img": "https://i.ibb.co/8DQZzcMG/Pa-o-Absorbente.jpg",
+        "alt_img": "Paños Absorbentes",
+        "title": "Paños Absorbentes",
+        "text": "Paño absorbente de limpieza Brio. Paquete de 12 unidades. Ideal para secar superficies.",
+        "category": "Limpieza"
+      }
+    ],
+    "Alimentos": [
+      {
+        "img": "https://i.ibb.co/S74Nvgws/Caja-Para-Torta.jpg",
+        "alt_img": "Cajas para Torta",
+        "title": "Cajas Para Torta",
+        "text": "Caja para pastel o torta de (20x20x10) cm y (30x30) cm. Paquete de 50 unidades.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/Dfj46hVS/Capacillos.jpg",
+        "alt_img": "Capacillos",
+        "title": "Capacillos",
+        "text": "Capacillos en todos los tamaños, desde 0, 1/2, 1, 2, 3, 4 y 5. Paquete de 1000 unidades.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/HLZjhD9K/Caja-para-Pizza.jpg",
+        "alt_img": "Cajas para Pizza",
+        "title": "Cajas para Pizza",
+        "text": "Caja para pizza de (25x25) cm, (33x33) cm y (40x40) cm. Paquete de 50 unidades.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/cSXLc42h/Color-L-quido.jpg",
+        "alt_img": "Colores Líquidos",
+        "title": "Colores Líquidos",
+        "text": "Colorante líquido de todos los colores. Paquete de 12 unidades en 15 ml cada uno.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/mVSYd0Lz/Disco-Dorado.jpg",
+        "alt_img": "Discos Dorados",
+        "title": "Discos Dorados",
+        "text": "Disco de cartón dorado para pasteles de 1/4, 1/2, y 1 kg. Se vende en paquete de 50 unidades.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/vCQfB28G/Envoltura-Industrial.jpg",
+        "alt_img": "Envolturas Industriales",
+        "title": "Envolturas Industriales",
+        "text": "Envoltura plástica de uso industrial de 4 kg. Ideal para proteger alimentos o mercancía.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/M5CbLcW8/Esencias-De-Reposter-a.jpg",
+        "alt_img": "Esencias De Repostería",
+        "title": "Esencias De Repostería",
+        "text": "Esencia de todos los sabores de 60 ml. Paquete de 12 unidades. Ideal para repostería.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/cc6gjWBj/Papel-de-Envolver.jpg",
+        "alt_img": "Papeles de Envolver",
+        "title": "Papeles de Envolver",
+        "text": "Papel de envolver monocromático de 1 kilogramo. Ideal para panaderías, pastelerías y regalos.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/KjMg4vcR/Plato-de-Cart-n.jpg",
+        "alt_img": "Platos de Cartón",
+        "title": "Platos de Cartón",
+        "text": "Plato de cartón número 7 y 8. Paquete de 1000 unidades. Ideal para eventos y comidas.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/Y4Yv0sL4/Plato-Pl-stico.jpg",
+        "alt_img": "Platos Plásticos",
+        "title": "Platos Plásticos",
+        "text": "Plato de plástico número 6, 7, 8 y 9. Se vende en paquetes de 500 unidades. Ideal para eventos y comidas.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/dwq6xHYg/Porta-Hamburguesa.jpg",
+        "alt_img": "Portas Hamburguesas",
+        "title": "Portas Hamburguesas",
+        "text": "Porta de cartón para hamburguesas. Paquete de 1000 unidades. Ideal para comida rápida.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/HDDWZLTD/porta-perro.jpg",
+        "alt_img": "Portas Perros",
+        "title": "Portas Perros",
+        "text": "Caja de cartón para hot dogs. Paquete de 1000 unidades. Ideal para comida rápida.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/b5bBCvVg/Porta-Papa.jpg",
+        "alt_img": "Portas Papas",
+        "title": "Portas Papas",
+        "text": "Caja de cartón para papas fritas. Paquete de 1000 unidades. Ideal para comida rápida.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/6RPn7bHw/Papel-Parafinado.jpg",
+        "alt_img": "Papeles Parafinados",
+        "title": "Papeles Parafinados",
+        "text": "Papel parafinado de 20, 50, 100, 200 metros. Ideal para envolver alimentos y comida rápida.",
+        "category": "Alimentos"
+      },
+      {
+        "img": "https://i.ibb.co/SD7V7fmh/Tortera-con-Tapa-Baja.jpg",
+        "alt_img": "Torteras con Tapa Baja",
+        "title": "Torteras con Tapa Baja",
+        "text": "Tortera desechable con tapa baja. Paquete de 10 unidades. Ideal para postres.",
+        "category": "Alimentos"
+      }
+    ],
+    "Utensilios": [
+      {
+        "img": "https://i.ibb.co/ns59kqSw/Cuchillo-Pl-stico.jpg",
+        "alt_img": "Cuchillos Plasticos",
+        "title": "Cuchillos Plásticos",
+        "text": "Cuchillo de plástico para uso desechable. Ideal para catering y eventos.",
+        "category": "Utensilios"
+      },
+      {
+        "img": "https://i.ibb.co/qLBM9khW/Cuchara-Ovalada.jpg",
+        "alt_img": "Cucharas Ovaladas",
+        "title": "Cucharas Ovaladas",
+        "text": "Cucharas de plástico ovaladas. Paquete de 1000 unidades (20x50). Para uso en comidas.",
+        "category": "Utensilios"
+      },
+      {
+        "img": "https://i.ibb.co/nqsRHtR6/Cucharita-de-Postre.jpg",
+        "alt_img": "Cucharitas de Postre",
+        "title": "Cucharitas Postre PP",
+        "text": "Cucharitas de postre de polipropileno. Se vende en paquete de 1000 unidades (40x25).",
+        "category": "Utensilios"
+      },
+      {
+        "img": "https://i.ibb.co/84djRt6v/Set-de-Cubiertos.jpg",
+        "alt_img": "Sets de Cubiertos",
+        "title": "Sets de Cubiertos",
+        "text": "Set de cubiertos desechables con servilleta. Ideal para comidas para llevar o eventos.",
+        "category": "Utensilios"
+      },
+      {
+        "img": "https://i.ibb.co/YFHMXTM4/Cucharita-Transparente.jpg",
+        "alt_img": "Cucharas Transparentes",
+        "title": "Cucharas Transparentes",
+        "text": "Cucharita de plástico transparente Suraplast. Se vende en paquete de 1000 unidades.",
+        "category": "Utensilios"
+      },
+      {
+        "img": "https://i.ibb.co/N6XjRMt5/Tenedor-Negro.jpg",
+        "alt_img": "Tenedores Negros Grandes",
+        "title": "Tenedores Negros",
+        "text": "Tenedor de plástico grande de color negro. Paquete de 1000 unidades. Para uso a granel.",
+        "category": "Utensilios"
+      }
+    ],
+    "Pitillos": [
+      {
+        "img": "https://i.ibb.co/8g60Y81q/Pitillo-Chichero.jpg",
+        "alt_img": "Pitillos Chicheros",
+        "title": "Pitillos Chicheros",
+        "text": "Pitillos chicheros de 7 1/2 pulgadas de colores. Paquete de 4500 unidades (30x150).",
+        "category": "Pitillos"
+      },
+      {
+        "img": "https://i.ibb.co/R40NzY4x/Pitillo-de-Colores.jpg",
+        "alt_img": "Pitillos de Colores",
+        "title": "Pitillos de Colores",
+        "text": "Pitillos gruesos de 10 1/2 pulgadas de colores. Paquete de 4000 unidades (40x100).",
+        "category": "Pitillos"
+      },
+      {
+        "img": "https://i.ibb.co/qF9HPcXk/Pitillo-Econ-mico.jpg",
+        "alt_img": "Pitillos Económicos",
+        "title": "Pitillos Económicos",
+        "text": "Pitillos económicos para todo tipo de bebidas. Paquete de 3000 unidades (30x100).",
+        "category": "Pitillos"
+      },
+      {
+        "img": "https://i.ibb.co/4ZpLHd9H/Removedor-de-Caf.jpg",
+        "alt_img": "Removedores de Café",
+        "title": "Removedores de Café",
+        "text": "Removedores de plástico para café o bebidas calientes. Paquete de 12000 unidades (12x1000).",
+        "category": "Pitillos"
+      }
+    ]
+  }
+}

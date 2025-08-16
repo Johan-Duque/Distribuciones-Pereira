@@ -1,0 +1,161 @@
+.nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  padding: 25px 70px;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 0.6s ease-in-out;
+  z-index: 1000;
+}
+
+.scrolled {
+  background-color: var(--gray-color);
+}
+
+.div_logo {
+  display: flex;
+  height: 100%;
+}
+
+.div_logo span {
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 24px;
+}
+
+.div_logo span svg {
+  color: var(--main-color);
+}
+
+.scrolled .div_logo span svg {
+  color: var(--white-color);
+}
+
+.div_links {
+  display: flex;
+}
+
+.div_links .menu_hamburger {
+  height: 100%;
+  font-size: var(--logos-size);
+  color: var(--main-color);
+  font-weight: 999;
+}
+
+.scrolled .div_links .menu_hamburger {
+  color: var(--main-color);
+}
+
+.ul_links {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style-type: none;
+}
+
+.div_li {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.li_links {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.li_links a {
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: calc(var(--links-size) + 4px);
+  position: relative;
+  overflow: hidden;
+}
+
+.li_links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+  transform: translateX(-100%);
+  transition: transform var(--short-time) ease-in-out;
+  border-left: 2px solid var(--main-color);
+}
+
+.scrolled .li_links a::after {
+  background-color: var(--main-color);
+}
+
+.li_links a:hover::after {
+  transform: translateX(0);
+}
+
+.li_links a:hover {
+  color: var(--white-color);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    padding: 30px 20px;
+  }
+
+  .li_links {
+    display: none;
+  }
+
+  .div_li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ul_links {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    right: -60%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--gray-color);
+    transition: right var(--short-time) ease-in-out;
+  }
+
+  .open_responsive_menu {
+    right: 0%;
+  }
+
+  .open_responsive_menu .li_links {
+    display: flex;
+    z-index: 1;
+  }
+
+  .open_responsive_menu .li_links a {
+    color: var(--white-color);
+  }
+
+  .close_menu {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: var(--logos-size);
+    color: var(--main-color);
+  }
+}
+
+@media (max-width: 325px) {
+  .nav {
+    padding: 30px 10px;
+  }
+}
+

@@ -1,0 +1,22 @@
+.errorContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; 
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.errorMessage {
+  background-color: #ffebee; 
+  color: #c62828; 
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  border: 1px solid #ef9a9a; 
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

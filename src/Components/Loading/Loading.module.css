@@ -1,0 +1,24 @@
+
+.loading_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.spinner {
+  border: 8px solid var(--light-color);
+  border-top: 8px solid var(--main-color);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin var(--average-time) linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

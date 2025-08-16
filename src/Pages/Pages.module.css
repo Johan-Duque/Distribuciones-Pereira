@@ -1,0 +1,78 @@
+
+.home_section_1 {
+  width: 100%;
+  padding: 0 80px;
+  margin-bottom: calc(2 * var(--margin-bottom));
+}
+
+.home_section_2 {
+  max-width: 1600px;
+  padding: 0 80px;
+  margin: 0px auto calc(2 * var(--margin-bottom)) auto;
+}
+
+
+.contact_page_container {
+    display: flex;
+    max-width: 1050px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.noProducts-found {
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.2em;
+  color: var(--gray-color);
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px;
+  background-image: url("https://i.ibb.co/VYdT0yY4/productos-no-encontrados.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+
+@media (max-width: 992px) {
+    .contact_page_container {
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+  .home_section_1 {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home_section_1,
+  .home_section_2 {
+    padding: 0 40px;
+  }
+
+  .home_section_2 {
+    margin-bottom: calc(2 * var(--margin-bottom));
+  }
+}
+
+@media (max-width: 480px) {
+  .home_section_1,
+  .home_section_2 {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .home_section_1 {
+    padding: 0 20px;
+  }
+}

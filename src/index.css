@@ -1,0 +1,32 @@
+:root {
+    --black-color:  #000000;
+    --dark-color: #7f5700;
+    --main-color:  #ffae00 ;
+    --light-color:  #ffc953 ;
+    --white-color:  #ffffff;
+    --gray-color: #141923;
+
+    --main-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --second-font: 'Times New Roman', Times, serif;
+
+    --logos-size: 30px;
+    --titles-size: 22px;
+    --subTitles-size: 20px;
+    --texts-size: 16px;
+    --links-size: 16px;
+    --buttons-size: 14px;
+
+    --long-time: 1.5s;
+    --average-time: 1s;
+    --short-time: .3s;
+
+    --margin-top: 40px;
+    --margin-bottom: 40px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}

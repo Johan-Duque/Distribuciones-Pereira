@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-color);
+}
+
+.copyright {
+    margin: var(--margin-top) 0;
+    color: var(--white-color);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
