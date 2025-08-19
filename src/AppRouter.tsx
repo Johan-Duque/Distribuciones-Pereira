@@ -10,10 +10,9 @@ const Products = lazy(() => import("./Pages/Products"));
 const Contact = lazy(() => import("./Pages/Contact"));
 
 function AppRouter() {
-  const basename = import.meta.env.PROD ? "/DistribucionesPereira-2025/" : "/";
 
   return (
-    <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />}>
